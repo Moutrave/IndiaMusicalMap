@@ -85,7 +85,7 @@
 
 <header>
   <h1>&#127925; India — Musical Heritage Board</h1>
-  <p>Instruments · Styles · Frameworks · Mythology</p>
+  <p>Instruments · Ragas · Styles · Frameworks · Mythology</p>
 </header>
 
 <div class="tabs">
@@ -94,6 +94,7 @@
   <div class="tab" onclick="showPanel('styles',this)">🎼 Musical Styles</div>
   <div class="tab" onclick="showPanel('framework',this)">📐 The Framework</div>
   <div class="tab" onclick="showPanel('musicians',this)">🎤 Legends</div>
+  <div class="tab" onclick="showPanel('ragas',this)">🎵 Ragas</div>
 </div>
 
 <!-- ═══════════════ MAP PANEL ═══════════════ -->
@@ -159,11 +160,18 @@
     <text x="222" y="505" text-anchor="middle" fill="#f2c94c">Mridangam</text>
   </g>
 
-  <!-- VEENA — Thanjavur, Tamil Nadu -->
+  <!-- SARASWATI VEENA — Thanjavur, Tamil Nadu -->
   <g class="pin" onclick="showTip(event,'veena')" tabindex="0">
-    <circle cx="205" cy="450" r="16" class="outer" stroke="#56ccf2" fill="#56ccf211"/>
-    <circle cx="205" cy="450" r="7" class="inner" fill="#56ccf2"/>
-    <text x="205" y="430" text-anchor="middle" fill="#56ccf2">Veena</text>
+    <circle cx="195" cy="450" r="16" class="outer" stroke="#56ccf2" fill="#56ccf211"/>
+    <circle cx="195" cy="450" r="7" class="inner" fill="#56ccf2"/>
+    <text x="195" y="430" text-anchor="middle" fill="#56ccf2">Saraswati Veena</text>
+  </g>
+
+  <!-- RUDRA VEENA — North India, Dhrupad belt -->
+  <g class="pin" onclick="showTip(event,'rudra-veena')" tabindex="0">
+    <circle cx="205" cy="240" r="16" class="outer" stroke="#56ccf2" fill="#56ccf211"/>
+    <circle cx="205" cy="240" r="7" class="inner" fill="#56ccf2"/>
+    <text x="205" y="265" text-anchor="middle" fill="#56ccf2">Rudra Veena</text>
   </g>
 
   <!-- SITAR — North India / Delhi area -->
@@ -264,11 +272,19 @@
   </div>
 
   <div class="card">
-    <h3>🪕 Veena (Saraswati Veena)</h3>
-    <div class="region">Thanjavur, Tamil Nadu</div>
-    <p>The oldest known Indian instrument (traced to c.1700 BCE), called <em>"The Queen of Instruments"</em> in South Indian music. Its current form with 24 fixed frets evolved in Thanjavur under the rule of Raghunatha Nayak. It is central to Carnatic music and appears in virtually every piece of ancient Indian art.</p>
-    <span class="legend-tag">🌟 Cosmic Connection</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Saraswati, goddess of knowledge and art, is always depicted holding a Veena. Sage Yagnavalka wrote that whoever knows the secrets to play the Veena can easily find the path to Moksha — it is the instrument of divine wisdom itself.</p>
+    <h3>🪕 Saraswati Veena</h3>
+    <div class="region">Thanjavur, Tamil Nadu — South India · Carnatic</div>
+    <p>The defining string instrument of Carnatic classical music, called <em>"The Queen of Instruments."</em> A large single-gourd lute with 24 fixed bronze frets and a distinctive carved dragon-head pegbox. Its current form was refined in Thanjavur under Raghunatha Nayak (17th century), building on a tradition traced back to c.1700 BCE. Where the Rudra Veena belongs to the Hindustani north, the Saraswati Veena is the spiritual and melodic heart of the south — its frets fixed precisely for Carnatic intonation, producing the warm, resonant tone inseparable from South Indian classical performance.</p>
+    <span class="legend-tag">🌟 Queen of Instruments</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Saraswati, goddess of knowledge and art, is always depicted holding this Veena. Sage Yagnavalka wrote that whoever knows the secrets to play it can find the path to Moksha. In temple iconography across South India, the Saraswati Veena appears in sculptures more than any other instrument — it is the sound of divine wisdom made physical.</p>
+  </div>
+
+  <div class="card">
+    <h3>🪕 Rudra Veena</h3>
+    <div class="region">North India — Dhrupad · Varanasi, Gwalior, Maihar</div>
+    <p>The most sacred and ancient of all Indian string instruments — and today one of the rarest. A long stick-zither with two large gourd resonators and 24 moveable frets, played lying across the lap using a wire plectrum (mizrab). The instrument of Dhrupad, the most austere and uncompromising Hindustani tradition. Where the Saraswati Veena sings with warmth and brightness, the Rudra Veena speaks in a deep, meditative drone that can fill an entire room before a single note has been fully played. Fewer than a dozen active masters remain. The Sitar is considered its distant descendant.</p>
+    <span class="legend-tag">🔱 Shiva's Own Instrument</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Shiva himself is said to have designed the Rudra Veena in the shape of his own divine body — the two gourd resonators representing his head, the long bamboo stick his spine. Playing it is considered a form of meditation on Shiva's cosmic form. In ancient times, only Brahmin musicians initiated into the Dhrupad mysteries were permitted to learn it. Its near-disappearance today is mourned across the classical world as an irreplaceable spiritual voice falling silent.</p>
   </div>
 
   <div class="card">
@@ -547,6 +563,118 @@
 </div>
 </div>
 
+<!-- ═══════════════ RAGAS PANEL ═══════════════ -->
+<div id="ragas-panel" class="panel">
+<div style="padding:20px;max-width:1100px;margin:0 auto">
+
+  <div class="fw-block" style="margin-bottom:24px">
+    <h2>🎵 The Essential Ragas</h2>
+    <h4>THE MELODIC SOULS OF INDIAN CLASSICAL MUSIC</h4>
+    <p>The word <em>Raga</em> comes from Sanskrit <em>rañj</em> — <strong>"to colour, to dye."</strong> A raga is not a scale: it is a complete living personality with rules for ascending, descending, which notes to linger on, how to ornament them, and what emotional universe to inhabit. Every raga belongs to a specific time of day and season — played at the wrong hour, it is considered musically and spiritually incorrect. Of the thousands theoretically possible, around 30 are regularly performed. Here are the essential ragas — the ones every listener of Indian classical music will encounter.</p>
+  </div>
+
+  <div class="card-grid">
+
+    <div class="card">
+      <h3>🌅 Raga Bhairav</h3>
+      <div class="region">Dawn · 6–9 AM · All Seasons</div>
+      <p>One of the oldest and most revered of all ragas — its name is a fearsome epithet of Shiva. Uses four komal (flattened) notes: Re, Ga, Dha, Ni, giving it a gravely beautiful, otherworldly colour unlike any other raga. It belongs to dawn — the sacred threshold between night and day — and is traditionally the opening raga of a classical concert at daybreak. Its sound is the musical equivalent of the first light touching a temple courtyard.</p>
+      <span class="legend-tag">🔱 Rasa: Shanta — Peace &amp; Devotion</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bhairav is Shiva in his most awe-inspiring aspect — the destroyer who makes way for creation. Singing this raga at dawn is considered an act of worship to Shiva himself. Tansen, the greatest musician in Indian history, is said to have mastered Bhairav so completely that its notes could induce a meditative trance in all who heard it.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌇 Raga Yaman</h3>
+      <div class="region">Evening · 6–9 PM · All Seasons</div>
+      <p>The first full raga taught to most Hindustani students — and one of the most luminous in the entire tradition. Every note is natural (shuddha) except the Madhyam, which is raised (tivra) — this single raised fourth gives Yaman its distinctive open, shimmering, expansive quality, as if the whole sky has been stretched into sound. It is the raga of beauty, longing, and the golden light of evening.</p>
+      <span class="legend-tag">✨ Rasa: Shringar — Love &amp; Beauty</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Yaman is associated with Lakshmi — the goddess of beauty and abundance — and with the feeling of the soul longing for the divine. Its evening timing reflects the ancient belief that dusk is the hour when the veil between the human and sacred worlds grows thin, and longing for God is at its most pure.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌄 Raga Bhairavi</h3>
+      <div class="region">Farewell Raga · Early Morning · All Seasons</div>
+      <p>Called the <em>"Queen of Ragas"</em> — conventionally the last raga of any concert, played as a musical farewell. Almost all of its notes are komal (flattened), giving it a depth of pathos that is immediately recognizable. While technically a morning raga, tradition allows it to be played at any time of day at the close of a performance — its valedictory sadness makes it the perfect ending. Thumris, bhajans, and folk songs more commonly use Bhairavi than any other raga.</p>
+      <span class="legend-tag">🌺 Rasa: Karuna — Pathos &amp; Tender Longing</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bhairavi is the divine feminine in her aspect of compassionate sorrow — associated with Parvati grieving for Shiva's absence. Its sound is said to contain the essence of viraha (separation from God) — the devotional ache at the heart of bhakti. A master's Bhairavi should leave the audience reluctant to let the music end.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌑 Raga Darbari Kanada</h3>
+      <div class="region">Deep Night · 12–3 AM · All Seasons</div>
+      <p>Created — or immortalized — by Tansen for Emperor Akbar's court (darbar = royal court). The most prestigious raga in the Hindustani tradition: serious, profound, heavy with gravity. Its most distinctive feature is a slow andolan (oscillation) on the Ga and Ni notes — a shimmering hesitation that makes each note feel like a question about the nature of existence. The great Dhrupad masters consider it the ultimate test of a musician's maturity and depth.</p>
+      <span class="legend-tag">👑 Rasa: Karuna — Deep Gravity &amp; Contemplation</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Legend says Akbar wept every time Tansen performed Darbari in the midnight court — not from sadness, but from an emotion so deep it had no name. The raga is said to contain the weight of all the great courts and all their forgotten music — every note a monument. Playing it badly is considered an insult to Tansen's ghost.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌑 Raga Malkauns</h3>
+      <div class="region">Deep Night · 12–3 AM · All Seasons</div>
+      <p>One of the most ancient and mysterious of all ragas — pentatonic (only five notes), containing no Re or Pa. Known as <em>Hindolam</em> in Carnatic music. Its reduced palette creates a concentrated, inward, almost hypnotic quality — like a meditation chamber with all unnecessary doors sealed. Dark, austere, and utterly still, Malkauns is the sound of the mind resting in its own depths at the midnight hour.</p>
+      <span class="legend-tag">🕉 Rasa: Shanta — Deep Stillness &amp; Mystery</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Associated with Shiva in deep samadhi on Mount Kailash — awareness without thought. According to legend, when Tansen's singing of Raga Deepak accidentally set the world on fire, it was Malkauns that a river goddess sang to extinguish the flames. The raga is said to cool whatever burns too hot — rage, fever, obsession.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌧 Raga Megh Malhar</h3>
+      <div class="region">Monsoon Season · Any Hour · Rainy Season Only</div>
+      <p>Megh = cloud. Malhar = rain. The raga of the monsoon — one of the Malhar family specifically composed to invoke and celebrate the rains. Sung during or before the arrival of the monsoon, its ascending phrases mimic the building of storm clouds; its descending lines are the relief of the first rain. The joy of Megh Malhar is the specific, universal joy of a land that has waited for rain and is finally drenched.</p>
+      <span class="legend-tag">⛈ Rasa: Adabhuta — Wonder &amp; Joyful Relief</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Tansen, having accidentally set the world ablaze by singing Raga Deepak, was saved when two women singers performed Megh Malhar to summon the monsoon rains. In villages across India, this raga is still sung in drought years — farmers believe its performance can compel the rain god Indra to respond. Associated with Krishna's playful, joyful aspect in Vrindavan.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌿 Raga Todi</h3>
+      <div class="region">Late Morning · 9 AM–12 PM · All Seasons</div>
+      <p>Considered among the most complex and emotionally demanding ragas in the entire tradition — a benchmark of a master's maturity. Uses komal Re, Ga, Dha and tivra Ma simultaneously, creating a dense, microtonal palette unlike anything in Western music. One of the 10 Thaats (parent scale families) of Hindustani music. Deeply melancholic and introspective, Todi requires extraordinary control of the gamaka (ornaments) that give each note its full voice.</p>
+      <span class="legend-tag">🦌 Rasa: Karuna — Deep Pathos &amp; Introspection</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">In classical miniature paintings, Todi is depicted as a woman alone in a forest, playing veena to enchanted deer. The image captures the raga perfectly — utter solitude, nature listening, and music so pure it has dissolved the boundary between performer and wilderness. A truly great Todi performance is said to cause the listener to temporarily forget their own name.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌙 Raga Bageshri</h3>
+      <div class="region">Late Night · After Midnight · All Seasons</div>
+      <p>The raga of longing — specifically the ache of separation from someone deeply loved. Uses komal Ga and Ni, with a characteristic wandering, searching quality in its phrases. Widely used in both classical Khayal and semi-classical Thumri settings. Bageshri phrases tend to circle and return, circle and return — musically enacting the mind that cannot stop returning to what it misses. One of the ragas most commonly encountered in classical Indian film music.</p>
+      <span class="legend-tag">💔 Rasa: Shringar Viyog — Longing in Separation</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">In Vaishnavite devotion, Bageshri expresses the soul's longing for Krishna — the Gopis waiting for him who does not return. But its longing transcends any single story: it is the universal ache of those who have loved something they cannot hold. Saints and mystics have used it to express the condition of the soul separated from God, circling forever in the midnight of longing.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌤 Raga Bilawal</h3>
+      <div class="region">Morning · 6–9 AM · All Seasons</div>
+      <p>The <em>"pure"</em> raga — all seven notes in their natural (shuddha) positions, corresponding approximately to the Western major scale. One of the 10 Thaats and the conceptual "home" of Hindustani pitch. Its clarity and openness make it a morning raga of serene purity rather than dramatic intensity. Beginning students learn Bilawal early to understand natural note relationships before encountering the more complex colorings of komal and tivra notes.</p>
+      <span class="legend-tag">🌸 Rasa: Shanta — Clarity &amp; Morning Serenity</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bilawal is associated with Saraswati — the goddess of knowledge — and with the purity of early morning before the world fills with noise. Its sound is sometimes described as sunlight itself: undramatic, essential, and clarifying. A well-played Bilawal is said to prepare the mind for learning — which is why teachers would begin lessons by singing it.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌸 Raga Kafi</h3>
+      <div class="region">Afternoon · Also: Spring / Holi · All Day</div>
+      <p>One of the most beloved and widely used ragas in Indian music — appearing in classical Khayal, Thumri, Bhajan, and folk song alike. Uses komal Ga and Ni, corresponding roughly to the Dorian mode of Western music. Its color is spring itself: playful, erotic-devotional, tinged with longing but fundamentally joyful. More than any other classical raga, Kafi bleeds into popular and folk traditions, its notes recognizable in countless melodies across the subcontinent.</p>
+      <span class="legend-tag">🎨 Rasa: Shringar — Love, Spring &amp; Play</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Kafi is the raga of Holi — the spring festival where Krishna played tricks, threw colors, and danced with the Gopis. Its notes carry the spirit of divine play (lila) — love that is simultaneously serious and lighthearted, devotional and sensual. Mirabai's bhajans, Kabir's mystical songs, and countless folk poems from Rajasthan and Braj are set in Kafi. It is the people's raga.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌆 Raga Shree</h3>
+      <div class="region">Dusk · Sunset · Winter Evenings</div>
+      <p>Among the most serious and majestic of all ragas — its gravitational pull is immediately felt. Uses both komal Re and Ni alongside a tivra (raised) Ma — an unusual combination that creates a uniquely weighty, twilight quality. Shree belongs to dusk: the hour of evening prayer (Sandhyavandanam), the transition between worlds. It is a raga for experienced ears — its full depth only revealed to those willing to sit with its heavy, unhurried progression.</p>
+      <span class="legend-tag">🕯 Rasa: Bhakti — Devotional Gravity</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Shree is associated with Lakshmi in her aspect of divine auspiciousness — the moment the lamp is lit at dusk and the home is made sacred for the night. Its sound is the musical equivalent of sandhya (twilight prayer) — the ancient ritual of standing at the threshold of day and night and acknowledging what cannot be seen. A master's Shree should feel like the silence between stars.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌠 Raga Pooriya Dhanashri</h3>
+      <div class="region">Dusk · 6–9 PM · All Seasons</div>
+      <p>A composite raga — a fusion of Pooriya and Dhanashri — and one of the most complex in the entire Hindustani tradition. Contains both a raised Ma (tivra) and komal Re, Ga, Ni simultaneously, creating an intricate harmonic density that rewards deep listening. It occupies the same twilight hour as Yaman but carries far more weight and shadow — not the open longing of evening, but a profound, almost aching sense of spiritual yearning that only dusk can hold.</p>
+      <span class="legend-tag">🌌 Rasa: Shringar Viyog — Twilight Spiritual Longing</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Pooriya Dhanashri is considered the raga of the soul standing at the last gate before darkness — looking back at the day and forward into night, aware of how much beauty has passed and how much remains unseen. It is said to contain two souls in one body — Pooriya's searching intensity and Dhanashri's tender devotion — forever in conversation, never fully resolved.</p>
+    </div>
+
+  </div>
+</div>
+</div>
+
 <!-- ═══════════════ TOOLTIP ═══════════════ -->
 <div id="tooltip"></div>
 
@@ -559,8 +687,13 @@ const TIPS = {
   },
   veena: {
     name:"Saraswati Veena", sub:"Thanjavur, Tamil Nadu · String · Carnatic",
-    text:"Queen of Instruments. Oldest Indian instrument (~1700 BCE). Saraswati, goddess of all knowledge and art, is never depicted without it. Sage Yagnavalka wrote that knowing its secrets reveals the path to Moksha — spiritual liberation.",
+    text:"Queen of Instruments. The defining string voice of Carnatic music — a large single-gourd lute with 24 fixed frets. Oldest Indian instrument (~1700 BCE). Saraswati, goddess of all knowledge and art, is never depicted without it. Sage Yagnavalka wrote that knowing its secrets reveals the path to Moksha.",
     badge:"🌟 Queen of Instruments"
+  },
+  'rudra-veena': {
+    name:"Rudra Veena", sub:"North India · String · Dhrupad / Hindustani",
+    text:"The most sacred of all Indian string instruments — Shiva's own. A long stick-zither with two gourd resonators, played lying across the lap. The instrument of Dhrupad and the ancestor of the Sitar. Nearly extinct today; fewer than a dozen active masters remain. Shiva designed it in the shape of his own divine body — its resonance is said to be a meditation on Rudra himself.",
+    badge:"🔱 Shiva's Instrument"
   },
   sitar: {
     name:"Sitar", sub:"North India — Mughal Delhi · String · Hindustani",
