@@ -84,27 +84,28 @@
 <body>
 
 <header>
-  <h1>&#127925; India — Musical Heritage Board</h1>
-  <p>Instruments · Ragas · Styles · Frameworks · Mythology</p>
+  <h1 data-fr="🎵 Inde — Héritage Musical en Carte">&#127925; India — Musical Heritage Board</h1>
+  <p data-fr="Instruments · Ragas · Styles · Cadres · Mythologie">Instruments · Ragas · Styles · Frameworks · Mythology</p>
+  <button id="lang-btn" onclick="toggleLang()" style="margin-top:12px;padding:5px 16px;background:#1a1228;border:1px solid #f2c94c;border-radius:16px;color:#f2c94c;cursor:pointer;font-size:.8rem;letter-spacing:.06em;font-family:Georgia,serif;">🇫🇷 FR</button>
 </header>
 
 <div class="tabs">
-  <div class="tab active" onclick="showPanel('map',this)">🗺 Map View</div>
-  <div class="tab" onclick="showPanel('instruments',this)">🎸 Instruments</div>
-  <div class="tab" onclick="showPanel('styles',this)">🎼 Musical Styles</div>
-  <div class="tab" onclick="showPanel('framework',this)">📐 The Framework</div>
-  <div class="tab" onclick="showPanel('musicians',this)">🎤 Legends</div>
-  <div class="tab" onclick="showPanel('ragas',this)">🎵 Ragas</div>
+  <div class="tab active" onclick="showPanel('map',this)" data-fr="🗺 Carte">🗺 Map View</div>
+  <div class="tab" onclick="showPanel('instruments',this)" data-fr="🎸 Instruments">🎸 Instruments</div>
+  <div class="tab" onclick="showPanel('styles',this)" data-fr="🎼 Styles Musicaux">🎼 Musical Styles</div>
+  <div class="tab" onclick="showPanel('framework',this)" data-fr="📐 Le Cadre">📐 The Framework</div>
+  <div class="tab" onclick="showPanel('musicians',this)" data-fr="🎤 Légendes">🎤 Legends</div>
+  <div class="tab" onclick="showPanel('ragas',this)" data-fr="🎵 Ragas">🎵 Ragas</div>
 </div>
 
 <!-- ═══════════════ MAP PANEL ═══════════════ -->
 <div id="map-panel" class="panel active">
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:#f2c94c"></div> Percussion</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#56ccf2"></div> String / Chordophone</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#6fcf97"></div> Wind / Aerophone</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#bb6bd9"></div> Drone / Zither</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#f2994a"></div> Classical Style Zone</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f2c94c"></div> <span data-fr="Percussion">Percussion</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#56ccf2"></div> <span data-fr="Cordes / Cordophone">String / Chordophone</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#6fcf97"></div> <span data-fr="Vents / Aérophone">Wind / Aerophone</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#bb6bd9"></div> <span data-fr="Bourdon / Cithare">Drone / Zither</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f2994a"></div> <span data-fr="Zone de Style Classique">Classical Style Zone</span></div>
 </div>
 <div class="map-container">
 <svg id="india-map" viewBox="0 0 500 560" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +256,7 @@
   <text x="255" y="548" text-anchor="middle" font-size="7.5" fill="#2a1e18" font-family="Georgia" letter-spacing="2">CLICK PINS TO EXPLORE · SIMPLIFIED CULTURAL MAP</text>
 </svg>
 </div>
-<p class="map-note">Pins show approximate cultural origin regions. Dashed ovals = classical music tradition zones. Click any pin for history &amp; mythology.</p>
+<p class="map-note" data-fr="Les épingles indiquent les régions d'origine culturelle approximatives. Ovales en pointillés = zones de tradition musicale classique. Cliquez sur une épingle pour l'histoire et la mythologie.">Pins show approximate cultural origin regions. Dashed ovals = classical music tradition zones. Click any pin for history &amp; mythology.</p>
 </div>
 
 <!-- ═══════════════ INSTRUMENTS PANEL ═══════════════ -->
@@ -263,107 +264,107 @@
 <div class="card-grid">
 
   <div class="card">
-    <h3>🥁 Mridangam</h3>
-    <div class="region">Tamil Nadu — South India</div>
-    <p>One of India's oldest percussion instruments, the Mridangam's name means <em>"body of clay"</em> — its earliest versions were made of hardened earth. Today carved from jackfruit wood, it is the rhythmic heartbeat of Carnatic music. During the Sangam era, it was played to signal the start of battle, its holy sound believed to deflect enemy arrows and protect the king.</p>
-    <span class="legend-tag">⚡ Divine Instrument — Deva Vaadyam</span><br>
-    <span class="legend-tag">🔱 Mythology</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Brahma created it so that Nandi, Shiva's divine bull companion, could beat its rhythm during Shiva's Tandava — the cosmic dance of creation and destruction. Its sound echoed across the heavens. Legend also says the Tabla was born by splitting a Mridangam in two.</p>
+    <h3 data-fr="🥁 Mridangam">🥁 Mridangam</h3>
+    <div class="region" data-fr="Tamil Nadu — Inde du Sud">Tamil Nadu — South India</div>
+    <p data-fr-html="L'un des plus anciens instruments à percussion de l'Inde — son nom signifie <em>« corps d'argile »</em>. Aujourd'hui sculpté dans le bois de jacquier, c'est le cœur rythmique de la musique carnatique. À l'époque Sangam, on le jouait pour annoncer le début des batailles.">One of India's oldest percussion instruments, the Mridangam's name means <em>"body of clay"</em> — its earliest versions were made of hardened earth. Today carved from jackfruit wood, it is the rhythmic heartbeat of Carnatic music. During the Sangam era, it was played to signal the start of battle, its holy sound believed to deflect enemy arrows and protect the king.</p>
+    <span class="legend-tag" data-fr="⚡ Instrument Divin — Deva Vaadyam">⚡ Divine Instrument — Deva Vaadyam</span><br>
+    <span class="legend-tag" data-fr="🔱 Mythologie">🔱 Mythology</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Brahma le créa pour que Nandi, le taureau divin de Shiva, puisse battre son rythme pendant la Tandava — la danse cosmique de la création et de la destruction. La légende dit aussi que le Tabla naquit en divisant un Mridangam en deux.">Brahma created it so that Nandi, Shiva's divine bull companion, could beat its rhythm during Shiva's Tandava — the cosmic dance of creation and destruction. Its sound echoed across the heavens. Legend also says the Tabla was born by splitting a Mridangam in two.</p>
   </div>
 
   <div class="card">
-    <h3>🪕 Saraswati Veena</h3>
-    <div class="region">Thanjavur, Tamil Nadu — South India · Carnatic</div>
-    <p>The defining string instrument of Carnatic classical music, called <em>"The Queen of Instruments."</em> A large single-gourd lute with 24 fixed bronze frets and a distinctive carved dragon-head pegbox. Its current form was refined in Thanjavur under Raghunatha Nayak (17th century), building on a tradition traced back to c.1700 BCE. Where the Rudra Veena belongs to the Hindustani north, the Saraswati Veena is the spiritual and melodic heart of the south — its frets fixed precisely for Carnatic intonation, producing the warm, resonant tone inseparable from South Indian classical performance.</p>
-    <span class="legend-tag">🌟 Queen of Instruments</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Saraswati, goddess of knowledge and art, is always depicted holding this Veena. Sage Yagnavalka wrote that whoever knows the secrets to play it can find the path to Moksha. In temple iconography across South India, the Saraswati Veena appears in sculptures more than any other instrument — it is the sound of divine wisdom made physical.</p>
+    <h3 data-fr="🪕 Veena de Saraswati">🪕 Saraswati Veena</h3>
+    <div class="region" data-fr="Thanjavur, Tamil Nadu — Inde du Sud · Carnatique">Thanjavur, Tamil Nadu — South India · Carnatic</div>
+    <p data-fr-html="L'instrument à cordes emblématique de la musique classique carnatique, surnommé <em>« La Reine des Instruments »</em>. Un grand luth à calebasse unique avec 24 frettes en bronze fixes et une tête sculptée en forme de dragon. Sa forme actuelle fut perfectionnée à Thanjavur au XVIIe siècle.">The defining string instrument of Carnatic classical music, called <em>"The Queen of Instruments."</em> A large single-gourd lute with 24 fixed bronze frets and a distinctive carved dragon-head pegbox. Its current form was refined in Thanjavur under Raghunatha Nayak (17th century), building on a tradition traced back to c.1700 BCE. Where the Rudra Veena belongs to the Hindustani north, the Saraswati Veena is the spiritual and melodic heart of the south — its frets fixed precisely for Carnatic intonation, producing the warm, resonant tone inseparable from South Indian classical performance.</p>
+    <span class="legend-tag" data-fr="🌟 Reine des Instruments">🌟 Queen of Instruments</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Saraswati, déesse de la connaissance et de l'art, est toujours représentée tenant cette Veena. Le sage Yagnavalka écrivit que quiconque connaît les secrets de son jeu peut trouver le chemin de la Moksha.">Saraswati, goddess of knowledge and art, is always depicted holding this Veena. Sage Yagnavalka wrote that whoever knows the secrets to play it can find the path to Moksha. In temple iconography across South India, the Saraswati Veena appears in sculptures more than any other instrument — it is the sound of divine wisdom made physical.</p>
   </div>
 
   <div class="card">
-    <h3>🪕 Rudra Veena</h3>
-    <div class="region">North India — Dhrupad · Varanasi, Gwalior, Maihar</div>
-    <p>The most sacred and ancient of all Indian string instruments — and today one of the rarest. A long stick-zither with two large gourd resonators and 24 moveable frets, played lying across the lap using a wire plectrum (mizrab). The instrument of Dhrupad, the most austere and uncompromising Hindustani tradition. Where the Saraswati Veena sings with warmth and brightness, the Rudra Veena speaks in a deep, meditative drone that can fill an entire room before a single note has been fully played. Fewer than a dozen active masters remain. The Sitar is considered its distant descendant.</p>
-    <span class="legend-tag">🔱 Shiva's Own Instrument</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Shiva himself is said to have designed the Rudra Veena in the shape of his own divine body — the two gourd resonators representing his head, the long bamboo stick his spine. Playing it is considered a form of meditation on Shiva's cosmic form. In ancient times, only Brahmin musicians initiated into the Dhrupad mysteries were permitted to learn it. Its near-disappearance today is mourned across the classical world as an irreplaceable spiritual voice falling silent.</p>
+    <h3 data-fr="🪕 Rudra Veena">🪕 Rudra Veena</h3>
+    <div class="region" data-fr="Inde du Nord — Dhrupad · Varanasi, Gwalior, Maihar">North India — Dhrupad · Varanasi, Gwalior, Maihar</div>
+    <p data-fr="Le plus sacré et le plus ancien de tous les instruments à cordes indiens — et aujourd'hui l'un des plus rares. Une longue cithare à bâton avec deux grandes résonateurs en calebasse et 24 frettes mobiles. L'instrument du Dhrupad, la tradition hindoustanie la plus austère. Moins d'une douzaine de maîtres actifs subsistent.">The most sacred and ancient of all Indian string instruments — and today one of the rarest. A long stick-zither with two large gourd resonators and 24 moveable frets, played lying across the lap using a wire plectrum (mizrab). The instrument of Dhrupad, the most austere and uncompromising Hindustani tradition. Where the Saraswati Veena sings with warmth and brightness, the Rudra Veena speaks in a deep, meditative drone that can fill an entire room before a single note has been fully played. Fewer than a dozen active masters remain. The Sitar is considered its distant descendant.</p>
+    <span class="legend-tag" data-fr="🔱 L'Instrument de Shiva">🔱 Shiva's Own Instrument</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Shiva lui-même aurait conçu la Rudra Veena à l'image de son propre corps divin — les deux résonateurs en calebasse représentant sa tête, le long bâton de bambou sa colonne vertébrale. Sa quasi-disparition est déplorée dans le monde classique comme une voix spirituelle irremplaçable qui se tait.">Shiva himself is said to have designed the Rudra Veena in the shape of his own divine body — the two gourd resonators representing his head, the long bamboo stick his spine. Playing it is considered a form of meditation on Shiva's cosmic form. In ancient times, only Brahmin musicians initiated into the Dhrupad mysteries were permitted to learn it. Its near-disappearance today is mourned across the classical world as an irreplaceable spiritual voice falling silent.</p>
   </div>
 
   <div class="card">
-    <h3>🪕 Sitar</h3>
-    <div class="region">North India — Mughal-era Delhi</div>
-    <p>Born from the crossing of Persian and Indian traditions, the Sitar evolved around the 13th century from the Persian <em>setar</em> (three strings) — attributed to Amir Khusro, the poet-musician who served seven Sultans of Delhi. Later shaped by Ravi Shankar and Vilayat Khan into the iconic instrument heard worldwide. It bears around 30 melodic, drone, and sympathetic strings.</p>
-    <span class="legend-tag">🌍 Persian-Indian Crossover</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">The Sitar is considered a descendant of the ancient Rudra Veena, which itself was linked to Lord Shiva (Rudra). The name blurred across two civilizations — Persian poetry and Hindu sacred music meeting in the Mughal court.</p>
+    <h3 data-fr="🪕 Sitar">🪕 Sitar</h3>
+    <div class="region" data-fr="Inde du Nord — Delhi de l'ère moghole">North India — Mughal-era Delhi</div>
+    <p data-fr-html="Né du croisement des traditions persane et indienne, le Sitar évolua au XIIIe siècle à partir du <em>setar</em> persan (trois cordes) — attribué à Amir Khusro, le poète-musicien qui servit sept Sultans de Delhi. Il porte environ 30 cordes mélodiques, de bourdon et sympathiques.">Born from the crossing of Persian and Indian traditions, the Sitar evolved around the 13th century from the Persian <em>setar</em> (three strings) — attributed to Amir Khusro, the poet-musician who served seven Sultans of Delhi. Later shaped by Ravi Shankar and Vilayat Khan into the iconic instrument heard worldwide. It bears around 30 melodic, drone, and sympathetic strings.</p>
+    <span class="legend-tag" data-fr="🌍 Croisement Perse-Indien">🌍 Persian-Indian Crossover</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Le Sitar est considéré comme un descendant de l'ancienne Rudra Veena, elle-même liée à Shiva (Rudra). Le nom s'est brouillé à travers deux civilisations — poésie persane et musique sacrée hindoue se rencontrant à la cour moghole.">The Sitar is considered a descendant of the ancient Rudra Veena, which itself was linked to Lord Shiva (Rudra). The name blurred across two civilizations — Persian poetry and Hindu sacred music meeting in the Mughal court.</p>
   </div>
 
   <div class="card">
-    <h3>🥁 Tabla</h3>
-    <div class="region">North India — Mughal era</div>
-    <p>The world's most recognizable Indian percussion duo. A pair of drums (the treble <em>dayan</em> and bass <em>bayan</em>), its modern form crystallized in the 18th century. It became central to Hindustani music and is now used globally — from jazz to electronic fusion. Nobel Prize-winning physicist C.V. Raman once studied the mathematics of its unique harmonic overtones.</p>
-    <span class="legend-tag">🔱 Born from the Divine</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Legend credits Amir Khusro with its invention. Others say the gods themselves split a Mridangam in half to create it — one drum for humans to understand the divine rhythm of the Tandava.</p>
+    <h3 data-fr="🥁 Tabla">🥁 Tabla</h3>
+    <div class="region" data-fr="Inde du Nord — ère moghole">North India — Mughal era</div>
+    <p data-fr="Le duo de percussion indien le plus reconnu au monde. Une paire de tambours, sa forme moderne s'est cristallisée au XVIIIe siècle. Il est maintenant utilisé dans le monde entier — du jazz à la fusion électronique. Le physicien C.V. Raman a étudié les mathématiques de ses harmoniques uniques.">The world's most recognizable Indian percussion duo. A pair of drums (the treble <em>dayan</em> and bass <em>bayan</em>), its modern form crystallized in the 18th century. It became central to Hindustani music and is now used globally — from jazz to electronic fusion. Nobel Prize-winning physicist C.V. Raman once studied the mathematics of its unique harmonic overtones.</p>
+    <span class="legend-tag" data-fr="🔱 Né du Divin">🔱 Born from the Divine</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="La légende attribue son invention à Amir Khusro. D'autres disent que les dieux eux-mêmes ont divisé un Mridangam en deux pour le créer — un tambour pour que les humains comprennent le rythme divin de la Tandava.">Legend credits Amir Khusro with its invention. Others say the gods themselves split a Mridangam in half to create it — one drum for humans to understand the divine rhythm of the Tandava.</p>
   </div>
 
   <div class="card">
-    <h3>🎵 Bansuri (Flute)</h3>
-    <div class="region">Rural North India — Mathura / Brindavan</div>
-    <p>A bamboo transverse flute over 3,000 years old. The best bamboo for it comes from the forests of Assam and Kerala. Simple in form, extraordinarily demanding in technique. It evolved from shepherds' folk instrument to one of Hindustani music's most spiritual voices, popularized in the classical setting by Pannalal Ghosh in the 20th century.</p>
-    <span class="legend-tag">💙 Krishna's Voice</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Lord Krishna is never depicted without his flute. Its music is said to have enchanted all living beings — cows, birds, gods, and mortals — luring them toward the divine. The Bansuri's sound is considered the voice of longing for the sacred.</p>
+    <h3 data-fr="🎵 Bansuri (Flûte)">🎵 Bansuri (Flute)</h3>
+    <div class="region" data-fr="Inde du Nord rurale — Mathura / Brindavan">Rural North India — Mathura / Brindavan</div>
+    <p data-fr="Une flûte traversière en bambou vieille de plus de 3 000 ans. Simple de forme, extraordinairement exigeante en technique. Elle évolua d'instrument folk de bergers vers l'une des voix les plus spirituelles de la musique hindoustanie.">A bamboo transverse flute over 3,000 years old. The best bamboo for it comes from the forests of Assam and Kerala. Simple in form, extraordinarily demanding in technique. It evolved from shepherds' folk instrument to one of Hindustani music's most spiritual voices, popularized in the classical setting by Pannalal Ghosh in the 20th century.</p>
+    <span class="legend-tag" data-fr="💙 La Voix de Krishna">💙 Krishna's Voice</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Krishna n'est jamais représenté sans sa flûte. Sa musique aurait charmé tous les êtres vivants — vaches, oiseaux, dieux et mortels — les attirant vers le divin. Le son du Bansuri est considéré comme la voix du désir du sacré.">Lord Krishna is never depicted without his flute. Its music is said to have enchanted all living beings — cows, birds, gods, and mortals — luring them toward the divine. The Bansuri's sound is considered the voice of longing for the sacred.</p>
   </div>
 
   <div class="card">
-    <h3>🪗 Santoor</h3>
-    <div class="region">Kashmir — Far North</div>
-    <p>A hammered dulcimer with over 100 strings, adopted from Persian musical culture (the santur) and made essential in Kashmir's Sufi folk music. Its cascading, shimmering tone became central to both folk and classical Hindustani music, particularly through the virtuosity of Pandit Shivkumar Sharma.</p>
-    <span class="legend-tag">🌿 Sufi + Classical</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">The Santoor entered India through ancient trading routes of Persia and Central Asia. In Kashmir, it was long played in Sufi mystical gatherings — its drone-like wash of sound meant to dissolve the boundaries between self and divine.</p>
+    <h3 data-fr="🪗 Santoor">🪗 Santoor</h3>
+    <div class="region" data-fr="Cachemire — Extrême Nord">Kashmir — Far North</div>
+    <p data-fr="Un dulcimer à marteau de plus de 100 cordes, adopté de la culture musicale persane et rendu essentiel dans la musique folk soufie du Cachemire. Son ton en cascade et chatoyant est devenu central dans la musique hindoustanie classique, notamment grâce au virtuose Pandit Shivkumar Sharma.">A hammered dulcimer with over 100 strings, adopted from Persian musical culture (the santur) and made essential in Kashmir's Sufi folk music. Its cascading, shimmering tone became central to both folk and classical Hindustani music, particularly through the virtuosity of Pandit Shivkumar Sharma.</p>
+    <span class="legend-tag" data-fr="🌿 Soufi + Classique">🌿 Sufi + Classical</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Le Santoor est entré en Inde par les anciennes routes commerciales de Perse et d'Asie centrale. Au Cachemire, il était joué dans les rassemblements mystiques soufis — son son de bourdon destiné à dissoudre les frontières entre soi et le divin.">The Santoor entered India through ancient trading routes of Persia and Central Asia. In Kashmir, it was long played in Sufi mystical gatherings — its drone-like wash of sound meant to dissolve the boundaries between self and divine.</p>
   </div>
 
   <div class="card">
-    <h3>🪕 Sarod</h3>
-    <div class="region">Northwest India — Afghan crossover</div>
-    <p>A short-necked, fretless lute with a metal fingerboard, descended from the Afghan <em>Rabab</em>. Brought to India through cultural exchange along the northwest corridor. Unlike the Sitar, its fretless design gives it a uniquely smooth, gliding quality. Legends like Ustad Ali Akbar Khan brought it global recognition.</p>
-    <span class="legend-tag">🌍 Afghan Heritage</span>
+    <h3 data-fr="🪕 Sarod">🪕 Sarod</h3>
+    <div class="region" data-fr="Nord-Ouest de l'Inde — croisement afghan">Northwest India — Afghan crossover</div>
+    <p data-fr="Un luth à manche court et sans frettes avec une touche en métal, descendant du Rabab afghan. Contrairement au Sitar, son design sans frettes lui confère une qualité de glissement unique et fluide. Des légendes comme Ustad Ali Akbar Khan lui ont donné une reconnaissance mondiale.">A short-necked, fretless lute with a metal fingerboard, descended from the Afghan <em>Rabab</em>. Brought to India through cultural exchange along the northwest corridor. Unlike the Sitar, its fretless design gives it a uniquely smooth, gliding quality. Legends like Ustad Ali Akbar Khan brought it global recognition.</p>
+    <span class="legend-tag" data-fr="🌍 Héritage Afghan">🌍 Afghan Heritage</span>
   </div>
 
   <div class="card">
-    <h3>🎺 Shehnai</h3>
-    <div class="region">North India — Varanasi / Konkan</div>
-    <p>A double-reed wind instrument — India's oboe — believed to have evolved from the ancient Persian Nafeeri. It is the instrument of auspicious ceremonies: weddings, temples, royal courts. In North India, Shehnai players (called <em>Vajantri</em>) were granted lands for their service at temple gates. Ustad Bismillah Khan made it a concert instrument.</p>
-    <span class="legend-tag">✨ Auspicious Sound</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Lord Ganesha is sometimes depicted playing the Shehnai. Its rich, nasal tone is believed to ward off misfortune and call in the gods — which is why it is still played at dawn in Hindu temples across India.</p>
+    <h3 data-fr="🎺 Shehnai">🎺 Shehnai</h3>
+    <div class="region" data-fr="Inde du Nord — Varanasi / Konkan">North India — Varanasi / Konkan</div>
+    <p data-fr="Un instrument à anche double — le hautbois de l'Inde — considéré comme l'instrument des cérémonies auspicieuses : mariages, temples, cours royales. Ustad Bismillah Khan en a fait un instrument de concert.">A double-reed wind instrument — India's oboe — believed to have evolved from the ancient Persian Nafeeri. It is the instrument of auspicious ceremonies: weddings, temples, royal courts. In North India, Shehnai players (called <em>Vajantri</em>) were granted lands for their service at temple gates. Ustad Bismillah Khan made it a concert instrument.</p>
+    <span class="legend-tag" data-fr="✨ Son Propice">✨ Auspicious Sound</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Le seigneur Ganesha est parfois représenté jouant du Shehnai. Son ton riche et nasal est censé éloigner le malheur et appeler les dieux — c'est pourquoi il est encore joué à l'aube dans les temples hindous à travers l'Inde.">Lord Ganesha is sometimes depicted playing the Shehnai. Its rich, nasal tone is believed to ward off misfortune and call in the gods — which is why it is still played at dawn in Hindu temples across India.</p>
   </div>
 
   <div class="card">
-    <h3>🪗 Tanpura</h3>
-    <div class="region">Deccan — Maharashtra / Karnataka</div>
-    <p>Not a melody instrument but a sacred drone — four strings tuned to produce a continuous harmonic hum that underpins all of Indian classical music. Every performance begins with its sound already present. It allows musicians to locate themselves in the tonal universe before a single note of the raga is played.</p>
-    <span class="legend-tag">🕉 Meditation Drone</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">The Tanpura is associated with the sage Narada, who wanders the cosmos singing the praises of Vishnu with a tambura in hand. Its drone represents the primordial Om — the sound from which all creation emerged.</p>
+    <h3 data-fr="🪗 Tanpura">🪗 Tanpura</h3>
+    <div class="region" data-fr="Deccan — Maharashtra / Karnataka">Deccan — Maharashtra / Karnataka</div>
+    <p data-fr="Pas un instrument mélodique mais un bourdon sacré — quatre cordes accordées pour produire un bourdonnement harmonique continu qui sous-tend toute la musique classique indienne. Chaque performance commence avec ce son déjà présent.">Not a melody instrument but a sacred drone — four strings tuned to produce a continuous harmonic hum that underpins all of Indian classical music. Every performance begins with its sound already present. It allows musicians to locate themselves in the tonal universe before a single note of the raga is played.</p>
+    <span class="legend-tag" data-fr="🕉 Bourdon de Méditation">🕉 Meditation Drone</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Le Tanpura est associé au sage Narada, qui erre dans le cosmos en chantant les louanges de Vishnu. Son bourdon représente le Om primordial — le son dont toute la création est issue.">The Tanpura is associated with the sage Narada, who wanders the cosmos singing the praises of Vishnu with a tambura in hand. Its drone represents the primordial Om — the sound from which all creation emerged.</p>
   </div>
 
   <div class="card">
-    <h3>🥁 Khol (Mridanga of Bengal)</h3>
-    <div class="region">Bengal / Odisha — East India</div>
-    <p>The Khol is essentially the eastern form of the Mridangam family — an asymmetric barrel drum made of clay and animal skin. It is the central instrument of Bengali devotional music (Kirtan) and the Vaishnavite tradition of Chaitanya Mahaprabhu. Unlike the Mridangam, it is often played standing, strung around the neck.</p>
-    <span class="legend-tag">🌸 Devotional Music</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">The Khol's hypnotic beat is inseparable from the ecstatic devotional singing of the Hare Krishna movement. Its rhythm is believed to induce states of divine intoxication — bhakti — in both musicians and listeners.</p>
+    <h3 data-fr="🥁 Khol (Mridanga du Bengale)">🥁 Khol (Mridanga of Bengal)</h3>
+    <div class="region" data-fr="Bengale / Odisha — Inde de l'Est">Bengal / Odisha — East India</div>
+    <p data-fr="Le Khol est essentiellement la forme orientale de la famille Mridangam — un tambour asymétrique en argile et peau animale. C'est l'instrument central de la musique dévotionnelle bengalie (Kirtan) et de la tradition vaishnavite de Chaitanya Mahaprabhu.">The Khol is essentially the eastern form of the Mridangam family — an asymmetric barrel drum made of clay and animal skin. It is the central instrument of Bengali devotional music (Kirtan) and the Vaishnavite tradition of Chaitanya Mahaprabhu. Unlike the Mridangam, it is often played standing, strung around the neck.</p>
+    <span class="legend-tag" data-fr="🌸 Musique Dévotionnelle">🌸 Devotional Music</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Le rythme hypnotique du Khol est inséparable du chant dévotionnel extatique du mouvement Hare Krishna. Son rythme est censé induire des états d'ivresse divine — le bhakti — chez les musiciens et les auditeurs.">The Khol's hypnotic beat is inseparable from the ecstatic devotional singing of the Hare Krishna movement. Its rhythm is believed to induce states of divine intoxication — bhakti — in both musicians and listeners.</p>
   </div>
 
   <div class="card">
-    <h3>🥁 Pakhavaj</h3>
-    <div class="region">North India — Dhrupad · Varanasi, Mathura, Nathdwara</div>
-    <p>The <em>Aadi Vadya</em> — India's primordial drum. A barrel-shaped, two-headed percussion instrument and direct ancestor of both the Tabla and the Mridangam. It was the sole percussion instrument of Dhrupad for centuries — the backbone of the most austere, sacred form of Hindustani music. When Khayal rose and Dhrupad declined in the 18th century, the more nimble Tabla displaced it. Several Gharanas (Nathdwara, Kudau Singh, Gwalior, Jaipur) preserve its distinct lineages.</p>
-    <span class="legend-tag">🔱 Aadi Vadya — The First Drum</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Brahma created the Pakhavaj from a demon's remains and taught Lord Ganesha to play it, so Shiva could dance the Tandava and stop the earth from trembling. When Dhrupad faded, legend says the gods split the drum in two — creating the Tabla — so its divine rhythm could speak in a gentler voice to a new age.</p>
+    <h3 data-fr="🥁 Pakhavaj">🥁 Pakhavaj</h3>
+    <div class="region" data-fr="Inde du Nord — Dhrupad · Varanasi, Mathura, Nathdwara">North India — Dhrupad · Varanasi, Mathura, Nathdwara</div>
+    <p data-fr="L'Aadi Vadya — le tambour primordial de l'Inde. Un instrument à percussion en forme de tonneau à deux faces et ancêtre direct du Tabla et du Mridangam. C'était le seul instrument à percussion du Dhrupad pendant des siècles.">The <em>Aadi Vadya</em> — India's primordial drum. A barrel-shaped, two-headed percussion instrument and direct ancestor of both the Tabla and the Mridangam. It was the sole percussion instrument of Dhrupad for centuries — the backbone of the most austere, sacred form of Hindustani music. When Khayal rose and Dhrupad declined in the 18th century, the more nimble Tabla displaced it. Several Gharanas (Nathdwara, Kudau Singh, Gwalior, Jaipur) preserve its distinct lineages.</p>
+    <span class="legend-tag" data-fr="🔱 Aadi Vadya — Le Premier Tambour">🔱 Aadi Vadya — The First Drum</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Brahma créa le Pakhavaj à partir des restes d'un démon et apprit à Ganesha à en jouer, pour que Shiva puisse danser la Tandava. Quand le Dhrupad déclina, la légende dit que les dieux divisèrent le tambour en deux — créant le Tabla.">Brahma created the Pakhavaj from a demon's remains and taught Lord Ganesha to play it, so Shiva could dance the Tandava and stop the earth from trembling. When Dhrupad faded, legend says the gods split the drum in two — creating the Tabla — so its divine rhythm could speak in a gentler voice to a new age.</p>
   </div>
 
   <div class="card">
-    <h3>🥁 Kanjira</h3>
-    <div class="region">Tamil Nadu — South India, Carnatic</div>
-    <p>A small single-headed frame drum — the South Indian cousin of the tambourine — with a single set of metal jingles set into its jackfruit wood frame. A folk instrument of temples and bhajans for centuries, it was transformed into a Carnatic classical voice in the 1880s by Manpoondia Pillai, who refined the technique and introduced monitor lizard skin for the membrane, giving it a warm, uniquely responsive tone. Played against the palm of the hand to bend pitch in real time.</p>
-    <span class="legend-tag">🎶 Carnatic Frame Drum</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">The Kanjira's membrane is so sensitive to humidity that players keep it warm against their body before performing — breathing on it to tune tension and pitch. In Carnatic percussion ensembles, the Kanjira, Mridangam and Ghatam engage in intricate rhythmic conversation, each answering the other's patterns in spontaneous call and response.</p>
+    <h3 data-fr="🥁 Kanjira">🥁 Kanjira</h3>
+    <div class="region" data-fr="Tamil Nadu — Inde du Sud, Carnatique">Tamil Nadu — South India, Carnatic</div>
+    <p data-fr="Un petit tambour à cadre à une seule membrane — le cousin sud-indien du tambourin. Instrument folk des temples et des bhajans, il fut transformé en voix classique carnatique dans les années 1880 par Manpoondia Pillai.">A small single-headed frame drum — the South Indian cousin of the tambourine — with a single set of metal jingles set into its jackfruit wood frame. A folk instrument of temples and bhajans for centuries, it was transformed into a Carnatic classical voice in the 1880s by Manpoondia Pillai, who refined the technique and introduced monitor lizard skin for the membrane, giving it a warm, uniquely responsive tone. Played against the palm of the hand to bend pitch in real time.</p>
+    <span class="legend-tag" data-fr="🎶 Tambour à Cadre Carnatique">🎶 Carnatic Frame Drum</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="La membrane du Kanjira est si sensible à l'humidité que les joueurs le gardent contre leur corps avant de se produire — en soufflant dessus pour ajuster la tension. Dans les ensembles de percussion carnatiques, le Kanjira, le Mridangam et le Ghatam s'engagent dans une conversation rythmique complexe.">The Kanjira's membrane is so sensitive to humidity that players keep it warm against their body before performing — breathing on it to tune tension and pitch. In Carnatic percussion ensembles, the Kanjira, Mridangam and Ghatam engage in intricate rhythmic conversation, each answering the other's patterns in spontaneous call and response.</p>
   </div>
 
 </div>
@@ -374,39 +375,39 @@
   <div style="max-width:900px;margin:0 auto;padding:20px">
 
    <div class="style-card">
-    <h3>🎼 Carnatic Music</h3>
-    <div class="geo">South India — Tamil Nadu, Karnataka, Andhra Pradesh, Kerala</div>
-    <p>The ancient, "pure" classical tradition of South India — it developed natively after the north diverged under Islamic influence. Carnatic music is deeply compositional: most pieces are fixed works by composer-saints. Improvisation exists but within tighter structures than Hindustani music. It is inseparable from Bhakti (devotion) — almost all Carnatic compositions are prayers. The musical architect of the system was <strong>Purandara Dasa</strong> (1484–1564), called the grandfather of Carnatic music, who codified its exercises and frameworks.</p>
+    <h3 data-fr="🎼 Musique Carnatique">🎼 Carnatic Music</h3>
+    <div class="geo" data-fr="Inde du Sud — Tamil Nadu, Karnataka, Andhra Pradesh, Kerala">South India — Tamil Nadu, Karnataka, Andhra Pradesh, Kerala</div>
+    <p data-fr="La tradition classique ancienne et « pure » de l'Inde du Sud — elle se développa nativement après que le nord divergea sous l'influence islamique. La musique carnatique est profondément compositionnelle : la plupart des pièces sont des œuvres fixes de saints-compositeurs. Elle est inséparable du Bhakti (dévotion).">The ancient, "pure" classical tradition of South India — it developed natively after the north diverged under Islamic influence. Carnatic music is deeply compositional: most pieces are fixed works by composer-saints. Improvisation exists but within tighter structures than Hindustani music. It is inseparable from Bhakti (devotion) — almost all Carnatic compositions are prayers. The musical architect of the system was <strong>Purandara Dasa</strong> (1484–1564), called the grandfather of Carnatic music, who codified its exercises and frameworks.</p>
    </div>
 
    <div class="style-card">
-    <h3>🎼 Hindustani Music</h3>
-    <div class="geo">North India — UP, Delhi, Bihar, Rajasthan, Maharashtra, Punjab</div>
-    <p>The North Indian classical tradition began diverging from Carnatic around the 13th century when Mughal influence introduced Persian and Arabic musical concepts, new instruments (Sitar, Sarod, Tabla), and a stronger emphasis on improvisation. A Hindustani performance can last over an hour — beginning with a long, free, meditative <em>alap</em> before gradually introducing rhythm. Gharanas (hereditary schools) define distinct lineages. The tradition values a unique emotional relationship between performer and audience — called <em>rasa</em>.</p>
+    <h3 data-fr="🎼 Musique Hindoustanie">🎼 Hindustani Music</h3>
+    <div class="geo" data-fr="Inde du Nord — UP, Delhi, Bihar, Rajasthan, Maharashtra, Punjab">North India — UP, Delhi, Bihar, Rajasthan, Maharashtra, Punjab</div>
+    <p data-fr="La tradition classique nord-indienne commença à diverger du carnatique vers le XIIIe siècle quand l'influence moghole introduisit des concepts musicaux persans et arabes, de nouveaux instruments (Sitar, Sarod, Tabla), et un accent plus fort sur l'improvisation.">The North Indian classical tradition began diverging from Carnatic around the 13th century when Mughal influence introduced Persian and Arabic musical concepts, new instruments (Sitar, Sarod, Tabla), and a stronger emphasis on improvisation. A Hindustani performance can last over an hour — beginning with a long, free, meditative <em>alap</em> before gradually introducing rhythm. Gharanas (hereditary schools) define distinct lineages. The tradition values a unique emotional relationship between performer and audience — called <em>rasa</em>.</p>
    </div>
 
    <div class="style-card">
-    <h3>🎼 Dhrupad</h3>
-    <div class="geo">North India — Gwalior, Agra, Varanasi</div>
-    <p>The oldest surviving form of Hindustani vocal music, dating to the Vedic period and codified in the 15th–16th century courts. Sung in Braj Bhasha, it is austere, deeply meditative, and devoid of ornamentation compared to later Khyal singing. The Rudra Veena and Pakhawaj drum are its instruments. Dhrupad is considered the most spiritual style — nearly unchanged for 500 years.</p>
+    <h3 data-fr="🎼 Dhrupad">🎼 Dhrupad</h3>
+    <div class="geo" data-fr="Inde du Nord — Gwalior, Agra, Varanasi">North India — Gwalior, Agra, Varanasi</div>
+    <p data-fr="La plus ancienne forme survivante de musique vocale hindoustanie, remontant à l'époque védique. Chanté en Braj Bhasha, il est austère, profondément méditatif et dépourvu d'ornements. La Rudra Veena et le tambour Pakhawaj sont ses instruments.">The oldest surviving form of Hindustani vocal music, dating to the Vedic period and codified in the 15th–16th century courts. Sung in Braj Bhasha, it is austere, deeply meditative, and devoid of ornamentation compared to later Khyal singing. The Rudra Veena and Pakhawaj drum are its instruments. Dhrupad is considered the most spiritual style — nearly unchanged for 500 years.</p>
    </div>
 
    <div class="style-card">
-    <h3>🎼 Odissi Music</h3>
-    <div class="geo">East India — Odisha</div>
-    <p>A distinct classical tradition from Eastern India with over 2,000 years of history, rooted in the ritual service of Lord Jagannatha. Unlike Hindustani or Carnatic, Odissi has its own unique ragas and talas, extensive poetic forms (the 12th century Gita Govinda is central to the repertoire), and a distinct vocal style. The Khol drum and Mardala accompany its performance.</p>
+    <h3 data-fr="🎼 Musique Odissi">🎼 Odissi Music</h3>
+    <div class="geo" data-fr="Inde de l'Est — Odisha">East India — Odisha</div>
+    <p data-fr="Une tradition classique distincte de l'est de l'Inde avec plus de 2 000 ans d'histoire, enracinée dans le service rituel du Seigneur Jagannatha. À la différence du hindoustani ou du carnatique, l'Odissi a ses propres ragas et talas uniques.">A distinct classical tradition from Eastern India with over 2,000 years of history, rooted in the ritual service of Lord Jagannatha. Unlike Hindustani or Carnatic, Odissi has its own unique ragas and talas, extensive poetic forms (the 12th century Gita Govinda is central to the repertoire), and a distinct vocal style. The Khol drum and Mardala accompany its performance.</p>
    </div>
 
    <div class="style-card">
-    <h3>🎼 Sufi / Qawwali</h3>
-    <div class="geo">Northwest India — Punjab, Rajasthan / Pakistan border regions</div>
-    <p>Mystical Islamic devotional music that absorbed the raga and tala framework of Indian classical music. Born in the Sufi orders, it is designed to induce <em>hal</em> — an altered spiritual state — through repetition and ecstatic buildup. Amir Khusro (the inventor of the Sitar) is considered its founder. The harmonium, tabla, and clapping define its sound. It was carried globally by Nusrat Fateh Ali Khan.</p>
+    <h3 data-fr="🎼 Soufi / Qawwali">🎼 Sufi / Qawwali</h3>
+    <div class="geo" data-fr="Nord-Ouest de l'Inde — Punjab, Rajasthan / régions frontalières du Pakistan">Northwest India — Punjab, Rajasthan / Pakistan border regions</div>
+    <p data-fr="Musique dévotionnelle islamique mystique qui absorba le cadre raga et tala de la musique classique indienne. Née dans les ordres soufis, elle est conçue pour induire le hal — un état spirituel altéré — par la répétition et l'accumulation extatique.">Mystical Islamic devotional music that absorbed the raga and tala framework of Indian classical music. Born in the Sufi orders, it is designed to induce <em>hal</em> — an altered spiritual state — through repetition and ecstatic buildup. Amir Khusro (the inventor of the Sitar) is considered its founder. The harmonium, tabla, and clapping define its sound. It was carried globally by Nusrat Fateh Ali Khan.</p>
    </div>
 
    <div class="style-card">
-    <h3>🎼 Baul Music</h3>
-    <div class="geo">East India — Bengal / Bangladesh</div>
-    <p>A syncretic folk-mystical tradition of wandering singers (Bauls) who blend Hindu Vaishnavism and Sufi Islam. The Ektara (one-string instrument), Dotara, and Khol drum define its earthy, improvisational sound. Baul songs explore the search for the divine within the human body (<em>maner manush</em> — the man of the heart). Rabindranath Tagore drew heavily from Baul tradition in his own music.</p>
+    <h3 data-fr="🎼 Musique Baul">🎼 Baul Music</h3>
+    <div class="geo" data-fr="Inde de l'Est — Bengale / Bangladesh">East India — Bengal / Bangladesh</div>
+    <p data-fr="Une tradition folk-mystique syncrétique de chanteurs errants (Bauls) qui mélangent l'hindouisme vaishnavite et l'islam soufi. L'Ektara (instrument à une corde), le Dotara et le tambour Khol définissent son son terreux et improvisé.">A syncretic folk-mystical tradition of wandering singers (Bauls) who blend Hindu Vaishnavism and Sufi Islam. The Ektara (one-string instrument), Dotara, and Khol drum define its earthy, improvisational sound. Baul songs explore the search for the divine within the human body (<em>maner manush</em> — the man of the heart). Rabindranath Tagore drew heavily from Baul tradition in his own music.</p>
    </div>
 
   </div>
@@ -417,62 +418,62 @@
 <div style="padding:20px;max-width:900px;margin:0 auto">
 
   <div class="fw-block">
-    <h2>🎨 Raga — The Soul of Indian Music</h2>
-    <h4>MELODIC FRAMEWORK</h4>
-    <p>The word <em>Raga</em> comes from Sanskrit meaning <span class="highlight">"colour" or "to dye"</span> — each raga is said to colour the mind and stir specific emotions. A raga is far more than a scale: it is a complete set of rules for how to build a melody, which notes to emphasize, how to move between them, and what emotional state to create.</p>
+    <h2 data-fr="🎨 Raga — L'Âme de la Musique Indienne">🎨 Raga — The Soul of Indian Music</h2>
+    <h4 data-fr="CADRE MÉLODIQUE">MELODIC FRAMEWORK</h4>
+    <p data-fr="Le mot Raga vient du sanskrit signifiant « couleur » ou « teindre » — chaque raga est dit colorer l'esprit et éveiller des émotions spécifiques. Un raga est bien plus qu'une gamme : c'est un ensemble complet de règles sur la façon de construire une mélodie.">The word <em>Raga</em> comes from Sanskrit meaning <span class="highlight">"colour" or "to dye"</span> — each raga is said to colour the mind and stir specific emotions. A raga is far more than a scale: it is a complete set of rules for how to build a melody, which notes to emphasize, how to move between them, and what emotional state to create.</p>
     <ul>
-      <li><strong>Aroha / Avaroha</strong> — the ascending and descending scale pattern (often different from each other)</li>
-      <li><strong>Vadi / Samvadi</strong> — the most and second-most important notes, which anchor the raga's personality</li>
-      <li><strong>Pakad</strong> — a characteristic phrase or motif unique to each raga</li>
-      <li><strong>Time &amp; Season</strong> — every raga is associated with a specific time of day or season. Raga Bhairav = dawn. Raga Yaman = evening. Raga Megh Malhar = the monsoon rains.</li>
-      <li><strong>Rasa</strong> — the emotional essence: longing, devotion, courage, serenity, erotic love, grief — each raga carries one primary rasa.</li>
+      <li data-fr="Aroha / Avaroha — le schéma ascendant et descendant (souvent différents l'un de l'autre)"><strong>Aroha / Avaroha</strong> — the ascending and descending scale pattern (often different from each other)</li>
+      <li data-fr="Vadi / Samvadi — les notes les plus et deuxièmes plus importantes, qui ancrent la personnalité du raga"><strong>Vadi / Samvadi</strong> — the most and second-most important notes, which anchor the raga's personality</li>
+      <li data-fr="Pakad — une phrase ou motif caractéristique propre à chaque raga"><strong>Pakad</strong> — a characteristic phrase or motif unique to each raga</li>
+      <li data-fr="Heure et Saison — chaque raga est associé à une heure du jour ou une saison spécifique. Raga Bhairav = l'aube. Raga Yaman = le soir. Raga Megh Malhar = les pluies de mousson."><strong>Time &amp; Season</strong> — every raga is associated with a specific time of day or season. Raga Bhairav = dawn. Raga Yaman = evening. Raga Megh Malhar = the monsoon rains.</li>
+      <li data-fr="Rasa — l'essence émotionnelle : nostalgie, dévotion, courage, sérénité, amour érotique, chagrin — chaque raga porte un rasa primaire."><strong>Rasa</strong> — the emotional essence: longing, devotion, courage, serenity, erotic love, grief — each raga carries one primary rasa.</li>
     </ul>
-    <p style="margin-top:10px">Thousands of ragas theoretically exist; in practice, about 30 are common and a master musician might have 40–50 in deep repertoire. No two performances of the same raga are ever identical — each is a unique improvised conversation between musician, instrument, moment, and audience.</p>
+    <p style="margin-top:10px" data-fr="Des milliers de ragas existent théoriquement ; en pratique, environ 30 sont courants et un musicien maître en possède 40 à 50 en répertoire profond. Aucune interprétation du même raga n'est jamais identique — chacune est une conversation improvisée unique.">Thousands of ragas theoretically exist; in practice, about 30 are common and a master musician might have 40–50 in deep repertoire. No two performances of the same raga are ever identical — each is a unique improvised conversation between musician, instrument, moment, and audience.</p>
   </div>
 
   <div class="fw-block">
-    <h2>⏱ Tala — The Skeleton of Time</h2>
-    <h4>RHYTHMIC CYCLE</h4>
-    <p>Where the Raga governs melody, the <em>Tala</em> governs time. A Tala is a cyclical rhythmic framework — a loop of beats that repeats throughout the performance. The first beat of each cycle is called the <span class="highlight">Sam</span> — the gravitational anchor that both musicians orbit and return to, often after elaborate excursions away from it.</p>
+    <h2 data-fr="⏱ Tala — Le Squelette du Temps">⏱ Tala — The Skeleton of Time</h2>
+    <h4 data-fr="CYCLE RYTHMIQUE">RHYTHMIC CYCLE</h4>
+    <p data-fr="Là où le Raga gouverne la mélodie, le Tala gouverne le temps. Un Tala est un cadre rythmique cyclique — une boucle de battements qui se répète tout au long de la performance. Le premier battement de chaque cycle s'appelle le Sam — l'ancrage gravitationnel.">Where the Raga governs melody, the <em>Tala</em> governs time. A Tala is a cyclical rhythmic framework — a loop of beats that repeats throughout the performance. The first beat of each cycle is called the <span class="highlight">Sam</span> — the gravitational anchor that both musicians orbit and return to, often after elaborate excursions away from it.</p>
     <ul>
-      <li><strong>Matra</strong> — the basic beat unit</li>
-      <li><strong>Teentaal</strong> — 16 beats (4+4+4+4) — the most common in Hindustani music</li>
-      <li><strong>Rupak Tala</strong> — 7 beats (3+2+2) — asymmetric and hypnotic</li>
-      <li><strong>Adi Tala</strong> — 8 beats — the most common in Carnatic music</li>
-      <li><strong>Bols</strong> — vocalized syllables (like "dha", "tun", "ge", "na") used to learn and communicate rhythmic patterns</li>
+      <li data-fr="Matra — l'unité de battement de base"><strong>Matra</strong> — the basic beat unit</li>
+      <li data-fr="Teentaal — 16 battements (4+4+4+4) — le plus courant en musique hindoustanie"><strong>Teentaal</strong> — 16 beats (4+4+4+4) — the most common in Hindustani music</li>
+      <li data-fr="Rupak Tala — 7 battements (3+2+2) — asymétrique et hypnotique"><strong>Rupak Tala</strong> — 7 beats (3+2+2) — asymmetric and hypnotic</li>
+      <li data-fr="Adi Tala — 8 battements — le plus courant en musique carnatique"><strong>Adi Tala</strong> — 8 beats — the most common in Carnatic music</li>
+      <li data-fr="Bols — syllabes vocalisées (comme « dha », « tun », « ge », « na ») utilisées pour apprendre et communiquer les schémas rythmiques"><strong>Bols</strong> — vocalized syllables (like "dha", "tun", "ge", "na") used to learn and communicate rhythmic patterns</li>
     </ul>
-    <p style="margin-top:10px">The Carnatic tala system is considered the most mathematically complex rhythmic system of any classical music tradition in the world. Talas can run in cycles of 5, 7, 9, 10, or more beats, creating intricate polyrhythmic possibilities.</p>
+    <p style="margin-top:10px" data-fr="Le système tala carnatique est considéré comme le système rythmique classique le plus complexe mathématiquement au monde.">The Carnatic tala system is considered the most mathematically complex rhythmic system of any classical music tradition in the world. Talas can run in cycles of 5, 7, 9, 10, or more beats, creating intricate polyrhythmic possibilities.</p>
   </div>
 
   <div class="fw-block">
-    <h2>🌀 Shruti — The 22 Microtones</h2>
-    <h4>MICROTONAL PITCH SYSTEM</h4>
-    <p>While Western music divides the octave into 12 equal semitones, Indian classical music recognizes <span class="highlight">22 distinct pitch intervals (Shrutis)</span> within each octave — first formalized by Bharata Muni in the Natya Shastra (c. 200 BCE–200 CE). This is not a theoretical curiosity: these microtones are actively used. A single note in a raga might be approached with a gentle glide (<em>meend</em>), a subtle oscillation (<em>gamak</em>), or a vibrato — each inflection carrying emotional meaning. In Indian classical music, the space between notes is often more important than the notes themselves.</p>
+    <h2 data-fr="🌀 Shruti — Les 22 Microtons">🌀 Shruti — The 22 Microtones</h2>
+    <h4 data-fr="SYSTÈME DE HAUTEUR MICROTONAL">MICROTONAL PITCH SYSTEM</h4>
+    <p data-fr="Alors que la musique occidentale divise l'octave en 12 demi-tons égaux, la musique classique indienne reconnaît 22 intervalles de hauteur distincts (Shrutis) dans chaque octave. Ce n'est pas une curiosité théorique : ces microtons sont activement utilisés. Dans la musique classique indienne, l'espace entre les notes est souvent plus important que les notes elles-mêmes.">While Western music divides the octave into 12 equal semitones, Indian classical music recognizes <span class="highlight">22 distinct pitch intervals (Shrutis)</span> within each octave — first formalized by Bharata Muni in the Natya Shastra (c. 200 BCE–200 CE). This is not a theoretical curiosity: these microtones are actively used. A single note in a raga might be approached with a gentle glide (<em>meend</em>), a subtle oscillation (<em>gamak</em>), or a vibrato — each inflection carrying emotional meaning. In Indian classical music, the space between notes is often more important than the notes themselves.</p>
   </div>
 
   <div class="fw-block">
-    <h2>🎤 Alap → Jor → Gat — Performance Structure</h2>
-    <h4>THE JOURNEY OF A PERFORMANCE</h4>
-    <p>A classical performance unfolds in distinct phases, each with its own energy and purpose:</p>
+    <h2 data-fr="🎤 Alap → Jor → Gat — Structure de la Performance">🎤 Alap → Jor → Gat — Performance Structure</h2>
+    <h4 data-fr="LE VOYAGE D'UNE PERFORMANCE">THE JOURNEY OF A PERFORMANCE</h4>
+    <p data-fr="Une performance classique se déroule en phases distinctes, chacune avec sa propre énergie et son but :">A classical performance unfolds in distinct phases, each with its own energy and purpose:</p>
     <ul>
-      <li><strong>Alap</strong> — free, unmetered, meditative. No rhythm. The raga is introduced note by note, like a painter sketching an outline. Can last 30–60 minutes alone.</li>
-      <li><strong>Jor</strong> — a pulse emerges, but still no tala cycle. Rhythmic momentum builds.</li>
-      <li><strong>Jhala</strong> — fast, energetic. The melody becomes rhythmically intense.</li>
-      <li><strong>Gat / Bandish</strong> — the tala enters. A composed theme is introduced and then elaborated with improvised variations. Percussion joins in full dialogue.</li>
-      <li><strong>Drut Gat</strong> — the climax. Fast tempo. Raga and tala in electric interplay, building to a final convergence on the Sam.</li>
+      <li data-fr="Alap — libre, non mesuré, méditatif. Pas de rythme. Le raga est introduit note par note. Peut durer 30 à 60 minutes seul."><strong>Alap</strong> — free, unmetered, meditative. No rhythm. The raga is introduced note by note, like a painter sketching an outline. Can last 30–60 minutes alone.</li>
+      <li data-fr="Jor — une pulsation émerge, mais toujours sans cycle tala. L'élan rythmique se construit."><strong>Jor</strong> — a pulse emerges, but still no tala cycle. Rhythmic momentum builds.</li>
+      <li data-fr="Jhala — rapide, énergique. La mélodie devient rythmiquement intense."><strong>Jhala</strong> — fast, energetic. The melody becomes rhythmically intense.</li>
+      <li data-fr="Gat / Bandish — le tala entre. Un thème composé est introduit puis développé avec des variations improvisées. La percussion rejoint en dialogue complet."><strong>Gat / Bandish</strong> — the tala enters. A composed theme is introduced and then elaborated with improvised variations. Percussion joins in full dialogue.</li>
+      <li data-fr="Drut Gat — l'apogée. Tempo rapide. Raga et tala en interaction électrique, culminant vers une convergence finale sur le Sam."><strong>Drut Gat</strong> — the climax. Fast tempo. Raga and tala in electric interplay, building to a final convergence on the Sam.</li>
     </ul>
   </div>
 
   <div class="fw-block">
-    <h2>📖 The Natya Shastra — The Root Text</h2>
-    <h4>200 BCE – 200 CE</h4>
-    <p>Written by the sage Bharata Muni, the Natya Shastra is the foundational text of all Indian performing arts — theatre, dance, and music. With 6,000 shlokas (verses), it classifies instruments into four groups based on acoustic principle (the same four that modern ethnomusicology uses globally), codifies the system of tala, defines the 22 Shrutis, and establishes the emotional framework of Rasa. It is the oldest known comprehensive treatise on music theory in the world. Every Indian musical tradition traces its theoretical roots to this single ancient document.</p>
+    <h2 data-fr="📖 Le Natya Shastra — Le Texte Fondateur">📖 The Natya Shastra — The Root Text</h2>
+    <h4 data-fr="200 AV. J.-C. – 200 AP. J.-C.">200 BCE – 200 CE</h4>
+    <p data-fr="Écrit par le sage Bharata Muni, le Natya Shastra est le texte fondateur de tous les arts de la scène indiens — théâtre, danse et musique. Avec 6 000 shlokas, il classe les instruments en quatre groupes selon le principe acoustique, codifie le système de tala, définit les 22 Shrutis et établit le cadre émotionnel du Rasa. C'est le plus ancien traité complet de théorie musicale au monde.">Written by the sage Bharata Muni, the Natya Shastra is the foundational text of all Indian performing arts — theatre, dance, and music. With 6,000 shlokas (verses), it classifies instruments into four groups based on acoustic principle (the same four that modern ethnomusicology uses globally), codifies the system of tala, defines the 22 Shrutis, and establishes the emotional framework of Rasa. It is the oldest known comprehensive treatise on music theory in the world. Every Indian musical tradition traces its theoretical roots to this single ancient document.</p>
   </div>
 
   <div class="fw-block">
-    <h2>🎓 Gharana — The Lineage Schools</h2>
-    <h4>HINDUSTANI MUSIC</h4>
-    <p>A <em>Gharana</em> is a hereditary school of music — a lineage of masters and students tied to a specific city or court. Each Gharana has its own style, repertoire, and approach to raga. The Guru-Shishya (master-disciple) relationship is the primary vehicle of transmission — a student might spend decades with one master before being considered complete. Major Gharanas include: <span class="highlight">Gwalior, Agra, Jaipur-Atrauli, Kirana, Patiala</span>. In South India, the equivalent tradition is associated with specific temple lineages and composer-saint schools.</p>
+    <h2 data-fr="🎓 Gharana — Les Écoles de Lignée">🎓 Gharana — The Lineage Schools</h2>
+    <h4 data-fr="MUSIQUE HINDOUSTANIE">HINDUSTANI MUSIC</h4>
+    <p data-fr="Un Gharana est une école héréditaire de musique — une lignée de maîtres et d'élèves liés à une ville ou une cour spécifique. Chaque Gharana a son propre style, répertoire et approche du raga. La relation Guru-Shishya (maître-disciple) est le principal vecteur de transmission.">A <em>Gharana</em> is a hereditary school of music — a lineage of masters and students tied to a specific city or court. Each Gharana has its own style, repertoire, and approach to raga. The Guru-Shishya (master-disciple) relationship is the primary vehicle of transmission — a student might spend decades with one master before being considered complete. Major Gharanas include: <span class="highlight">Gwalior, Agra, Jaipur-Atrauli, Kirana, Patiala</span>. In South India, the equivalent tradition is associated with specific temple lineages and composer-saint schools.</p>
   </div>
 
 </div>
@@ -483,81 +484,81 @@
 <div class="card-grid">
 
   <div class="card">
-    <h3>🎶 Tansen</h3>
-    <div class="region">c. 1493–1586 · Hindustani Vocal &amp; Dhrupad · Gwalior / Akbar's Court</div>
-    <p>Considered the greatest musician in Indian history. One of the Nine Gems of Emperor Akbar's court, he began as a disciple of Swami Haridas in Vrindavan. His mastery of raga was said to be supernatural — legend holds that his singing of Raga Deepak could literally light oil lamps, and Raga Megh Malhar could summon monsoon rains. He is the founding ancestor of six major Gharanas still active today.</p>
-    <span class="legend-tag">🔱 Supernatural Voice</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Akbar, deeply moved by his singing, wept openly during performances. Tansen's tomb in Gwalior is still a site of pilgrimage for musicians — it is said that eating the leaves of the tamarind tree growing there bestows a beautiful voice.</p>
+    <h3 data-fr="🎶 Tansen">🎶 Tansen</h3>
+    <div class="region" data-fr="c. 1493–1586 · Vocal & Dhrupad Hindoustani · Gwalior / Cour d'Akbar">c. 1493–1586 · Hindustani Vocal &amp; Dhrupad · Gwalior / Akbar's Court</div>
+    <p data-fr="Considéré comme le plus grand musicien de l'histoire indienne. L'un des Neuf Joyaux de la cour de l'Empereur Akbar. Sa maîtrise du raga était dite surnaturelle — la légende dit que son chant du Raga Deepak pouvait littéralement allumer des lampes à huile.">Considered the greatest musician in Indian history. One of the Nine Gems of Emperor Akbar's court, he began as a disciple of Swami Haridas in Vrindavan. His mastery of raga was said to be supernatural — legend holds that his singing of Raga Deepak could literally light oil lamps, and Raga Megh Malhar could summon monsoon rains. He is the founding ancestor of six major Gharanas still active today.</p>
+    <span class="legend-tag" data-fr="🔱 Voix Surnaturelle">🔱 Supernatural Voice</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Akbar, profondément ému par son chant, pleurait ouvertement lors des performances. La tombe de Tansen à Gwalior est encore un lieu de pèlerinage pour les musiciens — il est dit que manger les feuilles du tamarinier qui y pousse confère une belle voix.">Akbar, deeply moved by his singing, wept openly during performances. Tansen's tomb in Gwalior is still a site of pilgrimage for musicians — it is said that eating the leaves of the tamarind tree growing there bestows a beautiful voice.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Amir Khusro</h3>
-    <div class="region">1253–1325 · Poet-Musician · Delhi Sultanate</div>
-    <p>The most towering polymath of medieval Indian music — poet, composer, musician, and Sufi mystic. Credited (with varying degrees of historical certainty) with inventing or shaping the Sitar, the Tabla, and Qawwali. He fused Persian poetic forms with Indian raga, creating entirely new musical genres. He wrote in Persian, Hindi, and Braj Bhasha simultaneously, producing over 400,000 verses across his lifetime.</p>
-    <span class="legend-tag">🌍 Father of Qawwali</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Devoted disciple of Sufi saint Nizamuddin Auliya, Khusro died just six months after his master. His devotional poetry — <em>"Chaap Tilak"</em> — is still sung at the dargah in Delhi every Thursday night, unbroken for 700 years.</p>
+    <h3 data-fr="🎶 Amir Khusro">🎶 Amir Khusro</h3>
+    <div class="region" data-fr="1253–1325 · Poète-Musicien · Sultanat de Delhi">1253–1325 · Poet-Musician · Delhi Sultanate</div>
+    <p data-fr="Le plus éminent polymathe de la musique médiévale indienne — poète, compositeur, musicien et mystique soufi. On lui attribue l'invention ou la mise en forme du Sitar, du Tabla et du Qawwali. Il a fusionné les formes poétiques persanes avec le raga indien.">The most towering polymath of medieval Indian music — poet, composer, musician, and Sufi mystic. Credited (with varying degrees of historical certainty) with inventing or shaping the Sitar, the Tabla, and Qawwali. He fused Persian poetic forms with Indian raga, creating entirely new musical genres. He wrote in Persian, Hindi, and Braj Bhasha simultaneously, producing over 400,000 verses across his lifetime.</p>
+    <span class="legend-tag" data-fr="🌍 Père du Qawwali">🌍 Father of Qawwali</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Disciple dévoué du saint soufi Nizamuddin Auliya, Khusro mourut six mois seulement après son maître. Sa poésie dévotionnelle — « Chaap Tilak » — est encore chantée au dargah de Delhi chaque jeudi soir, ininterrompue depuis 700 ans.">Devoted disciple of Sufi saint Nizamuddin Auliya, Khusro died just six months after his master. His devotional poetry — <em>"Chaap Tilak"</em> — is still sung at the dargah in Delhi every Thursday night, unbroken for 700 years.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Purandara Dasa</h3>
-    <div class="region">1484–1564 · Carnatic Composer-Saint · Karnataka</div>
-    <p>Called <em>Pitamaha</em> — the grandfather of Carnatic music. A wealthy merchant who gave away his entire fortune and became a wandering devotee of Vishnu, composing over 475,000 devotional songs (of which about 1,000 survive). He created the foundational exercises, scales, and lesson structure that every Carnatic student still uses today. Without him, there would be no Carnatic pedagogy.</p>
-    <span class="legend-tag">📖 Father of Carnatic Music</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Legend says his wife secretly sold her nose ring to fund his charity, and when confronted, the ring miraculously appeared back on her face. Purandara Dasa saw this as divine confirmation to renounce the world — he gave away everything the next morning.</p>
+    <h3 data-fr="🎶 Purandara Dasa">🎶 Purandara Dasa</h3>
+    <div class="region" data-fr="1484–1564 · Saint-Compositeur Carnatique · Karnataka">1484–1564 · Carnatic Composer-Saint · Karnataka</div>
+    <p data-fr="Surnommé Pitamaha — le grand-père de la musique carnatique. Un riche marchand qui donna toute sa fortune et devint un dévot errant de Vishnu, composant plus de 475 000 chants dévotionnels. Il créa les exercices fondamentaux, les gammes et la structure pédagogique que chaque étudiant carnatique utilise encore aujourd'hui.">Called <em>Pitamaha</em> — the grandfather of Carnatic music. A wealthy merchant who gave away his entire fortune and became a wandering devotee of Vishnu, composing over 475,000 devotional songs (of which about 1,000 survive). He created the foundational exercises, scales, and lesson structure that every Carnatic student still uses today. Without him, there would be no Carnatic pedagogy.</p>
+    <span class="legend-tag" data-fr="📖 Père de la Musique Carnatique">📖 Father of Carnatic Music</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="La légende dit que sa femme vendit secrètement son anneau de nez pour financer sa charité, et quand confrontée, l'anneau réapparut miraculeusement sur son visage. Purandara Dasa vit cela comme une confirmation divine pour renoncer au monde.">Legend says his wife secretly sold her nose ring to fund his charity, and when confronted, the ring miraculously appeared back on her face. Purandara Dasa saw this as divine confirmation to renounce the world — he gave away everything the next morning.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Tyagaraja</h3>
-    <div class="region">1767–1847 · Carnatic Composer-Saint · Tiruvarur, Tamil Nadu</div>
-    <p>One of the Trinity of Carnatic music (alongside Muthuswami Dikshitar and Syama Sastri). Composed over 700 surviving kritis — intricate, devotional compositions in Telugu, almost all addressed personally to Lord Rama. He refused royal patronage multiple times, famously composing <em>Nidhi Chala Sukhama</em> — asking whether wealth or God's music brings greater happiness. His answer was unambiguous.</p>
-    <span class="legend-tag">🌺 The Carnatic Trinity</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Tyagaraja is said to have had visions of Rama throughout his life. On the night before he died, he is said to have seen Rama's divine form and sang continuously through the night — the last composition witnessed by his disciples was one of pure ecstatic joy.</p>
+    <h3 data-fr="🎶 Tyagaraja">🎶 Tyagaraja</h3>
+    <div class="region" data-fr="1767–1847 · Saint-Compositeur Carnatique · Tiruvarur, Tamil Nadu">1767–1847 · Carnatic Composer-Saint · Tiruvarur, Tamil Nadu</div>
+    <p data-fr="L'un de la Trinité de la musique carnatique. Il composa plus de 700 kritis survivants — des compositions dévotionnelles intriquées en télougou, presque toutes adressées personnellement au Seigneur Rama. Il refusa le patronage royal à plusieurs reprises.">One of the Trinity of Carnatic music (alongside Muthuswami Dikshitar and Syama Sastri). Composed over 700 surviving kritis — intricate, devotional compositions in Telugu, almost all addressed personally to Lord Rama. He refused royal patronage multiple times, famously composing <em>Nidhi Chala Sukhama</em> — asking whether wealth or God's music brings greater happiness. His answer was unambiguous.</p>
+    <span class="legend-tag" data-fr="🌺 La Trinité Carnatique">🌺 The Carnatic Trinity</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Tyagaraja aurait eu des visions de Rama tout au long de sa vie. La nuit avant sa mort, il aurait vu la forme divine de Rama et chanté sans interruption jusqu'au matin — la dernière composition témoignée par ses disciples était d'une joie extatique pure.">Tyagaraja is said to have had visions of Rama throughout his life. On the night before he died, he is said to have seen Rama's divine form and sang continuously through the night — the last composition witnessed by his disciples was one of pure ecstatic joy.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Pandit Ravi Shankar</h3>
-    <div class="region">1920–2012 · Sitar · Hindustani / Global</div>
-    <p>The man who introduced Indian classical music to the Western world. Trained under the legendary Allauddin Khan for seven years of total immersion (including living in his household), he went on to collaborate with Yehudi Menuhin, compose for the Beatles (teaching George Harrison), and perform at Woodstock and the Concert for Bangladesh. He received three Grammys and India's highest civilian honour, the Bharat Ratna.</p>
-    <span class="legend-tag">🌍 Ambassador to the World</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">George Harrison said Ravi Shankar was the person who most influenced his spiritual life. Their collaboration brought ragas into the ears of an entire generation of Westerners, cracking open a bridge between two musical civilizations that had never touched.</p>
+    <h3 data-fr="🎶 Pandit Ravi Shankar">🎶 Pandit Ravi Shankar</h3>
+    <div class="region" data-fr="1920–2012 · Sitar · Hindoustani / Mondial">1920–2012 · Sitar · Hindustani / Global</div>
+    <p data-fr="L'homme qui présenta la musique classique indienne au monde occidental. Formé sous le légendaire Allauddin Khan, il collabora avec Yehudi Menuhin, composa pour les Beatles (enseignant à George Harrison) et se produisit à Woodstock. Il reçut trois Grammys et le Bharat Ratna.">The man who introduced Indian classical music to the Western world. Trained under the legendary Allauddin Khan for seven years of total immersion (including living in his household), he went on to collaborate with Yehudi Menuhin, compose for the Beatles (teaching George Harrison), and perform at Woodstock and the Concert for Bangladesh. He received three Grammys and India's highest civilian honour, the Bharat Ratna.</p>
+    <span class="legend-tag" data-fr="🌍 Ambassadeur au Monde">🌍 Ambassador to the World</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="George Harrison a dit que Ravi Shankar était la personne qui a le plus influencé sa vie spirituelle. Leur collaboration apporta les ragas aux oreilles d'une génération entière d'Occidentaux.">George Harrison said Ravi Shankar was the person who most influenced his spiritual life. Their collaboration brought ragas into the ears of an entire generation of Westerners, cracking open a bridge between two musical civilizations that had never touched.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Ustad Zakir Hussain</h3>
-    <div class="region">1951–2024 · Tabla · Hindustani / Global</div>
-    <p>The greatest tabla player of the modern era, son of the legendary Ustad Alla Rakha. A child prodigy who began performing at age seven, he elevated the tabla from an accompanying instrument to a concert soloist in its own right. He collaborated with John McLaughlin (Shakti), Mickey Hart, Charles Lloyd, and virtually every major Indian classical musician of his generation. He passed in December 2024, mourned across the musical world.</p>
-    <span class="legend-tag">⚡ Master of Rhythm</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Zakir could reproduce any sound — rain on a tin roof, a train passing, a crowd — using only the tabla's two drums. He once said: <em>"The tabla speaks. I am only the translator."</em></p>
+    <h3 data-fr="🎶 Ustad Zakir Hussain">🎶 Ustad Zakir Hussain</h3>
+    <div class="region" data-fr="1951–2024 · Tabla · Hindoustani / Mondial">1951–2024 · Tabla · Hindustani / Global</div>
+    <p data-fr="Le plus grand joueur de tabla de l'ère moderne, fils du légendaire Ustad Alla Rakha. Enfant prodige, il commença à se produire à sept ans et éleva le tabla d'instrument d'accompagnement à soliste de concert. Il collabora avec John McLaughlin (Shakti) et pratiquement tous les grands musiciens classiques indiens de sa génération. Il nous a quittés en décembre 2024.">The greatest tabla player of the modern era, son of the legendary Ustad Alla Rakha. A child prodigy who began performing at age seven, he elevated the tabla from an accompanying instrument to a concert soloist in its own right. He collaborated with John McLaughlin (Shakti), Mickey Hart, Charles Lloyd, and virtually every major Indian classical musician of his generation. He passed in December 2024, mourned across the musical world.</p>
+    <span class="legend-tag" data-fr="⚡ Maître du Rythme">⚡ Master of Rhythm</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Zakir pouvait reproduire n'importe quel son — la pluie sur un toit en tôle, un train passant, une foule — en utilisant uniquement les deux tambours du tabla. Il dit un jour : « Le tabla parle. Je ne suis que le traducteur. »">Zakir could reproduce any sound — rain on a tin roof, a train passing, a crowd — using only the tabla's two drums. He once said: <em>"The tabla speaks. I am only the translator."</em></p>
   </div>
 
   <div class="card">
-    <h3>🎶 M.S. Subbulakshmi</h3>
-    <div class="region">1916–2004 · Carnatic Vocal · Tamil Nadu</div>
-    <p>The first musician ever to receive the Bharat Ratna — India's highest civilian honour. Called <em>MS</em> by the entire nation as if she were a household member, her rendition of <em>Venkateswara Suprabhatam</em> wakes up millions of homes across India every morning to this day. She performed at the United Nations in 1966 — the first Indian artist to do so — and received a standing ovation from the General Assembly.</p>
-    <span class="legend-tag">🌟 Queen of Music</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Yehudi Menuhin called her <em>"the greatest artist in the world."</em> Her voice was said to carry a quality called <em>bhakti rasa</em> — pure devotional feeling — so completely that even those who understood no Tamil were moved to tears.</p>
+    <h3 data-fr="🎶 M.S. Subbulakshmi">🎶 M.S. Subbulakshmi</h3>
+    <div class="region" data-fr="1916–2004 · Chant Carnatique · Tamil Nadu">1916–2004 · Carnatic Vocal · Tamil Nadu</div>
+    <p data-fr="La première musicienne à recevoir le Bharat Ratna — la plus haute distinction civile de l'Inde. Sa version du Venkateswara Suprabhatam réveille des millions de foyers à travers l'Inde chaque matin. Elle s'est produite aux Nations Unies en 1966 — la première artiste indienne à le faire.">The first musician ever to receive the Bharat Ratna — India's highest civilian honour. Called <em>MS</em> by the entire nation as if she were a household member, her rendition of <em>Venkateswara Suprabhatam</em> wakes up millions of homes across India every morning to this day. She performed at the United Nations in 1966 — the first Indian artist to do so — and received a standing ovation from the General Assembly.</p>
+    <span class="legend-tag" data-fr="🌟 Reine de la Musique">🌟 Queen of Music</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Yehudi Menuhin l'appela « la plus grande artiste du monde. » Sa voix était dite posséder une qualité appelée bhakti rasa — un sentiment dévotionnel si pur que même ceux qui ne comprenaient pas le tamoul étaient émus aux larmes.">Yehudi Menuhin called her <em>"the greatest artist in the world."</em> Her voice was said to carry a quality called <em>bhakti rasa</em> — pure devotional feeling — so completely that even those who understood no Tamil were moved to tears.</p>
   </div>
 
   <div class="card">
-    <h3>🎶 Ustad Bismillah Khan</h3>
-    <div class="region">1916–2006 · Shehnai · Varanasi</div>
-    <p>The man who transformed the Shehnai from a ceremonial instrument played at temple gates and weddings into a concert-hall masterpiece. He played at India's first Independence Day celebrations on August 15, 1947, as Nehru raised the flag at the Red Fort — his shehnai announced the birth of independent India to the nation. A devout Muslim who played daily at the Hindu Vishwanath temple in Varanasi, he embodied the Ganga-Jamuni tehzeeb — the syncretic culture of North India.</p>
-    <span class="legend-tag">🕊 Voice of Independence</span>
-    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">When asked why a Muslim played at a Hindu temple every day, Bismillah Khan replied: <em>"Music has no religion. The shehnai has been my worship since I was seven years old. I play for God — the address is different, but God is one."</em></p>
+    <h3 data-fr="🎶 Ustad Bismillah Khan">🎶 Ustad Bismillah Khan</h3>
+    <div class="region" data-fr="1916–2006 · Shehnai · Varanasi">1916–2006 · Shehnai · Varanasi</div>
+    <p data-fr="L'homme qui transforma le Shehnai d'instrument cérémoniel joué aux portes des temples et aux mariages en chef-d'œuvre de salle de concert. Il joua lors des premières célébrations de l'indépendance de l'Inde le 15 août 1947. Musulman dévot qui jouait quotidiennement au temple hindou Vishwanath de Varanasi.">The man who transformed the Shehnai from a ceremonial instrument played at temple gates and weddings into a concert-hall masterpiece. He played at India's first Independence Day celebrations on August 15, 1947, as Nehru raised the flag at the Red Fort — his shehnai announced the birth of independent India to the nation. A devout Muslim who played daily at the Hindu Vishwanath temple in Varanasi, he embodied the Ganga-Jamuni tehzeeb — the syncretic culture of North India.</p>
+    <span class="legend-tag" data-fr="🕊 Voix de l'Indépendance">🕊 Voice of Independence</span>
+    <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Quand on lui demandait pourquoi un musulman jouait dans un temple hindou chaque jour, Bismillah Khan répondait : « La musique n'a pas de religion. Le shehnai est mon culte depuis mes sept ans. Je joue pour Dieu — l'adresse est différente, mais Dieu est un. »">When asked why a Muslim played at a Hindu temple every day, Bismillah Khan replied: <em>"Music has no religion. The shehnai has been my worship since I was seven years old. I play for God — the address is different, but God is one."</em></p>
   </div>
 
   <div class="card">
-    <h3>🎶 Pandit Hariprasad Chaurasia</h3>
-    <div class="region">b. 1938 · Bansuri · Hindustani</div>
-    <p>The musician who elevated the Bansuri from a folk instrument associated with Krishna's mythology to one of the most expressive voices in Hindustani classical music. He taught himself to play in secret as a teenager (his father wanted him to wrestle), trained under Pandit Bholanath and later the legendary Annapurna Devi, and went on to define what the classical bansuri sounds like for an entire generation. His film scores — including <em>Silsila</em> and <em>Chandni</em> — introduced classical bansuri to hundreds of millions.</p>
-    <span class="legend-tag">💙 Voice of Krishna</span>
+    <h3 data-fr="🎶 Pandit Hariprasad Chaurasia">🎶 Pandit Hariprasad Chaurasia</h3>
+    <div class="region" data-fr="né en 1938 · Bansuri · Hindoustani">b. 1938 · Bansuri · Hindustani</div>
+    <p data-fr="Le musicien qui éleva le Bansuri d'instrument folk associé à la mythologie de Krishna à l'une des voix les plus expressives de la musique classique hindoustanie. Il s'enseigna à jouer en secret adolescent (son père voulait qu'il pratique la lutte). Ses musiques de films — dont Silsila et Chandni — introduisirent le bansuri classique à des centaines de millions de personnes.">The musician who elevated the Bansuri from a folk instrument associated with Krishna's mythology to one of the most expressive voices in Hindustani classical music. He taught himself to play in secret as a teenager (his father wanted him to wrestle), trained under Pandit Bholanath and later the legendary Annapurna Devi, and went on to define what the classical bansuri sounds like for an entire generation. His film scores — including <em>Silsila</em> and <em>Chandni</em> — introduced classical bansuri to hundreds of millions.</p>
+    <span class="legend-tag" data-fr="💙 Voix de Krishna">💙 Voice of Krishna</span>
   </div>
 
   <div class="card">
-    <h3>🎶 Pandit Shivkumar Sharma</h3>
-    <div class="region">1938–2022 · Santoor · Hindustani</div>
-    <p>The man who single-handedly brought the Santoor — a Kashmiri folk and Sufi instrument — into the Hindustani classical concert tradition. His father Pandit Uma Dutt Sharma, a vocalist, believed the Santoor could be transformed into a classical vehicle, and trained his young son accordingly. Shivkumar spent years developing new playing techniques to allow the slow meend (glides) and gamakas that classical music requires on a hammered dulcimer. His partnership with Hariprasad Chaurasia as <em>Shiv-Hari</em> produced some of Indian film music's most beloved scores.</p>
-    <span class="legend-tag">🌿 The Santoor's Father</span>
+    <h3 data-fr="🎶 Pandit Shivkumar Sharma">🎶 Pandit Shivkumar Sharma</h3>
+    <div class="region" data-fr="1938–2022 · Santoor · Hindoustani">1938–2022 · Santoor · Hindustani</div>
+    <p data-fr="L'homme qui introduisit à lui seul le Santoor — un instrument folk et soufi du Cachemire — dans la tradition classique de concert hindoustanie. Il passa des années à développer de nouvelles techniques de jeu pour permettre le meend (glissandos) lent que la musique classique exige sur un dulcimer à marteau.">The man who single-handedly brought the Santoor — a Kashmiri folk and Sufi instrument — into the Hindustani classical concert tradition. His father Pandit Uma Dutt Sharma, a vocalist, believed the Santoor could be transformed into a classical vehicle, and trained his young son accordingly. Shivkumar spent years developing new playing techniques to allow the slow meend (glides) and gamakas that classical music requires on a hammered dulcimer. His partnership with Hariprasad Chaurasia as <em>Shiv-Hari</em> produced some of Indian film music's most beloved scores.</p>
+    <span class="legend-tag" data-fr="🌿 Le Père du Santoor">🌿 The Santoor's Father</span>
   </div>
 
 </div>
@@ -568,108 +569,108 @@
 <div style="padding:20px;max-width:1100px;margin:0 auto">
 
   <div class="fw-block" style="margin-bottom:24px">
-    <h2>🎵 The Essential Ragas</h2>
-    <h4>THE MELODIC SOULS OF INDIAN CLASSICAL MUSIC</h4>
-    <p>The word <em>Raga</em> comes from Sanskrit <em>rañj</em> — <strong>"to colour, to dye."</strong> A raga is not a scale: it is a complete living personality with rules for ascending, descending, which notes to linger on, how to ornament them, and what emotional universe to inhabit. Every raga belongs to a specific time of day and season — played at the wrong hour, it is considered musically and spiritually incorrect. Of the thousands theoretically possible, around 30 are regularly performed. Here are the essential ragas — the ones every listener of Indian classical music will encounter.</p>
-    <p style="margin-top:12px"><strong style="color:#f2c94c">Rasa</strong> — from Sanskrit <em>"juice" or "essence"</em> — is the emotional flavour a raga is designed to evoke. Indian aesthetic theory recognizes nine primary rasas: <em>Shringar</em> (love/beauty), <em>Hasya</em> (joy), <em>Karuna</em> (pathos/compassion), <em>Raudra</em> (fury), <em>Vira</em> (heroism), <em>Bhayanaka</em> (fear/awe), <em>Bibhatsa</em> (disgust), <em>Adbhuta</em> (wonder), and <em>Shanta</em> (peace/serenity). A raga carries one primary rasa — the emotional truth the musician draws out through improvisation. The goal is not personal expression but the transmission of a specific feeling-state to the listener, ideally dissolving the boundary between performer, music, and audience.</p>
+    <h2 data-fr="🎵 Les Ragas Essentiels">🎵 The Essential Ragas</h2>
+    <h4 data-fr="LES ÂMES MÉLODIQUES DE LA MUSIQUE CLASSIQUE INDIENNE">THE MELODIC SOULS OF INDIAN CLASSICAL MUSIC</h4>
+    <p data-fr="Le mot Raga vient du sanskrit rañj — « colorer, teindre ». Un raga n'est pas une gamme : c'est une personnalité vivante complète avec des règles pour monter, descendre, sur quelles notes s'attarder, comment les ornementer, et quel univers émotionnel habiter. Chaque raga appartient à une heure du jour et une saison spécifiques. Parmi les milliers théoriquement possibles, environ 30 sont régulièrement joués.">The word <em>Raga</em> comes from Sanskrit <em>rañj</em> — <strong>"to colour, to dye."</strong> A raga is not a scale: it is a complete living personality with rules for ascending, descending, which notes to linger on, how to ornament them, and what emotional universe to inhabit. Every raga belongs to a specific time of day and season — played at the wrong hour, it is considered musically and spiritually incorrect. Of the thousands theoretically possible, around 30 are regularly performed. Here are the essential ragas — the ones every listener of Indian classical music will encounter.</p>
+    <p style="margin-top:12px" data-fr="Le Rasa — du sanskrit « jus » ou « essence » — est la saveur émotionnelle qu'un raga est conçu pour évoquer. La théorie esthétique indienne reconnaît neuf rasas primaires : Shringar (amour/beauté), Hasya (joie), Karuna (pathos/compassion), Raudra (fureur), Vira (héroïsme), Bhayanaka (peur/admiration), Bibhatsa (dégoût), Adbhuta (émerveillement), et Shanta (paix/sérénité)."><strong style="color:#f2c94c">Rasa</strong> — from Sanskrit <em>"juice" or "essence"</em> — is the emotional flavour a raga is designed to evoke. Indian aesthetic theory recognizes nine primary rasas: <em>Shringar</em> (love/beauty), <em>Hasya</em> (joy), <em>Karuna</em> (pathos/compassion), <em>Raudra</em> (fury), <em>Vira</em> (heroism), <em>Bhayanaka</em> (fear/awe), <em>Bibhatsa</em> (disgust), <em>Adbhuta</em> (wonder), and <em>Shanta</em> (peace/serenity). A raga carries one primary rasa — the emotional truth the musician draws out through improvisation. The goal is not personal expression but the transmission of a specific feeling-state to the listener, ideally dissolving the boundary between performer, music, and audience.</p>
   </div>
 
   <div class="card-grid">
 
     <div class="card">
-      <h3>🌅 Raga Bhairav</h3>
-      <div class="region">Dawn · 6–9 AM · All Seasons</div>
-      <p>One of the oldest and most revered of all ragas — its name is a fearsome epithet of Shiva. Uses four komal (flattened) notes: Re, Ga, Dha, Ni, giving it a gravely beautiful, otherworldly colour unlike any other raga. It belongs to dawn — the sacred threshold between night and day — and is traditionally the opening raga of a classical concert at daybreak. Its sound is the musical equivalent of the first light touching a temple courtyard.</p>
-      <span class="legend-tag">🔱 Rasa: Shanta — Peace &amp; Devotion</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bhairav is Shiva in his most awe-inspiring aspect — the destroyer who makes way for creation. Singing this raga at dawn is considered an act of worship to Shiva himself. Tansen, the greatest musician in Indian history, is said to have mastered Bhairav so completely that its notes could induce a meditative trance in all who heard it.</p>
+      <h3 data-fr="🌅 Raga Bhairav">🌅 Raga Bhairav</h3>
+      <div class="region" data-fr="Aube · 6h–9h · Toutes Saisons">Dawn · 6–9 AM · All Seasons</div>
+      <p data-fr="L'un des plus anciens et plus vénérés de tous les ragas — son nom est un épithète redoutable de Shiva. Il utilise quatre notes komal (aplaties) : Re, Ga, Dha, Ni, lui donnant une couleur gravement belle et surnaturelle. Il appartient à l'aube — le seuil sacré entre la nuit et le jour.">One of the oldest and most revered of all ragas — its name is a fearsome epithet of Shiva. Uses four komal (flattened) notes: Re, Ga, Dha, Ni, giving it a gravely beautiful, otherworldly colour unlike any other raga. It belongs to dawn — the sacred threshold between night and day — and is traditionally the opening raga of a classical concert at daybreak. Its sound is the musical equivalent of the first light touching a temple courtyard.</p>
+      <span class="legend-tag" data-fr="🔱 Rasa : Shanta — Paix & Dévotion">🔱 Rasa: Shanta — Peace &amp; Devotion</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Bhairav est Shiva dans son aspect le plus impressionnant — le destructeur qui fait place à la création. Chanter ce raga à l'aube est considéré comme un acte de dévotion à Shiva lui-même.">Bhairav is Shiva in his most awe-inspiring aspect — the destroyer who makes way for creation. Singing this raga at dawn is considered an act of worship to Shiva himself. Tansen, the greatest musician in Indian history, is said to have mastered Bhairav so completely that its notes could induce a meditative trance in all who heard it.</p>
     </div>
 
     <div class="card">
-      <h3>🌇 Raga Yaman</h3>
-      <div class="region">Evening · 6–9 PM · All Seasons</div>
-      <p>The first full raga taught to most Hindustani students — and one of the most luminous in the entire tradition. Every note is natural (shuddha) except the Madhyam, which is raised (tivra) — this single raised fourth gives Yaman its distinctive open, shimmering, expansive quality, as if the whole sky has been stretched into sound. It is the raga of beauty, longing, and the golden light of evening.</p>
-      <span class="legend-tag">✨ Rasa: Shringar — Love &amp; Beauty</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Yaman is associated with Lakshmi — the goddess of beauty and abundance — and with the feeling of the soul longing for the divine. Its evening timing reflects the ancient belief that dusk is the hour when the veil between the human and sacred worlds grows thin, and longing for God is at its most pure.</p>
+      <h3 data-fr="🌇 Raga Yaman">🌇 Raga Yaman</h3>
+      <div class="region" data-fr="Soir · 18h–21h · Toutes Saisons">Evening · 6–9 PM · All Seasons</div>
+      <p data-fr="Le premier raga complet enseigné à la plupart des étudiants hindoustaniens — et l'un des plus lumineux de toute la tradition. Chaque note est naturelle (shuddha) sauf le Madhyam, qui est élevé (tivra) — ce seul quatrième élevé donne à Yaman sa qualité distinctive ouverte et chatoyante.">The first full raga taught to most Hindustani students — and one of the most luminous in the entire tradition. Every note is natural (shuddha) except the Madhyam, which is raised (tivra) — this single raised fourth gives Yaman its distinctive open, shimmering, expansive quality, as if the whole sky has been stretched into sound. It is the raga of beauty, longing, and the golden light of evening.</p>
+      <span class="legend-tag" data-fr="✨ Rasa : Shringar — Amour & Beauté">✨ Rasa: Shringar — Love &amp; Beauty</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Yaman est associé à Lakshmi — la déesse de la beauté et de l'abondance — et au sentiment de l'âme aspirant au divin. Son moment vespéral reflète la croyance ancienne que le crépuscule est l'heure où le voile entre les mondes humain et sacré s'amincit.">Yaman is associated with Lakshmi — the goddess of beauty and abundance — and with the feeling of the soul longing for the divine. Its evening timing reflects the ancient belief that dusk is the hour when the veil between the human and sacred worlds grows thin, and longing for God is at its most pure.</p>
     </div>
 
     <div class="card">
-      <h3>🌄 Raga Bhairavi</h3>
-      <div class="region">Farewell Raga · Early Morning · All Seasons</div>
-      <p>Called the <em>"Queen of Ragas"</em> — conventionally the last raga of any concert, played as a musical farewell. Almost all of its notes are komal (flattened), giving it a depth of pathos that is immediately recognizable. While technically a morning raga, tradition allows it to be played at any time of day at the close of a performance — its valedictory sadness makes it the perfect ending. Thumris, bhajans, and folk songs more commonly use Bhairavi than any other raga.</p>
-      <span class="legend-tag">🌺 Rasa: Karuna — Pathos &amp; Tender Longing</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bhairavi is the divine feminine in her aspect of compassionate sorrow — associated with Parvati grieving for Shiva's absence. Its sound is said to contain the essence of viraha (separation from God) — the devotional ache at the heart of bhakti. A master's Bhairavi should leave the audience reluctant to let the music end.</p>
+      <h3 data-fr="🌄 Raga Bhairavi">🌄 Raga Bhairavi</h3>
+      <div class="region" data-fr="Raga d'Adieu · Petit Matin · Toutes Saisons">Farewell Raga · Early Morning · All Seasons</div>
+      <p data-fr="Appelé la « Reine des Ragas » — conventionnellement le dernier raga de tout concert, joué comme un au revoir musical. Presque toutes ses notes sont komal (aplaties), lui conférant une profondeur de pathos immédiatement reconnaissable.">Called the <em>"Queen of Ragas"</em> — conventionally the last raga of any concert, played as a musical farewell. Almost all of its notes are komal (flattened), giving it a depth of pathos that is immediately recognizable. While technically a morning raga, tradition allows it to be played at any time of day at the close of a performance — its valedictory sadness makes it the perfect ending. Thumris, bhajans, and folk songs more commonly use Bhairavi than any other raga.</p>
+      <span class="legend-tag" data-fr="🌺 Rasa : Karuna — Pathos & Tendre Nostalgie">🌺 Rasa: Karuna — Pathos &amp; Tender Longing</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Bhairavi est le féminin divin dans son aspect de tristesse compatissante — associé à Parvati pleurant l'absence de Shiva. Son son est dit contenir l'essence du viraha (séparation de Dieu) — l'aspiration dévotionnelle au cœur du bhakti.">Bhairavi is the divine feminine in her aspect of compassionate sorrow — associated with Parvati grieving for Shiva's absence. Its sound is said to contain the essence of viraha (separation from God) — the devotional ache at the heart of bhakti. A master's Bhairavi should leave the audience reluctant to let the music end.</p>
     </div>
 
     <div class="card">
-      <h3>🌑 Raga Darbari Kanada</h3>
-      <div class="region">Deep Night · 12–3 AM · All Seasons</div>
-      <p>Created — or immortalized — by Tansen for Emperor Akbar's court (darbar = royal court). The most prestigious raga in the Hindustani tradition: serious, profound, heavy with gravity. Its most distinctive feature is a slow andolan (oscillation) on the Ga and Ni notes — a shimmering hesitation that makes each note feel like a question about the nature of existence. The great Dhrupad masters consider it the ultimate test of a musician's maturity and depth.</p>
-      <span class="legend-tag">👑 Rasa: Karuna — Deep Gravity &amp; Contemplation</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Legend says Akbar wept every time Tansen performed Darbari in the midnight court — not from sadness, but from an emotion so deep it had no name. The raga is said to contain the weight of all the great courts and all their forgotten music — every note a monument. Playing it badly is considered an insult to Tansen's ghost.</p>
+      <h3 data-fr="🌑 Raga Darbari Kanada">🌑 Raga Darbari Kanada</h3>
+      <div class="region" data-fr="Nuit Profonde · 00h–3h · Toutes Saisons">Deep Night · 12–3 AM · All Seasons</div>
+      <p data-fr="Créé — ou immortalisé — par Tansen pour la cour de l'Empereur Akbar (darbar = cour royale). Le raga le plus prestigieux de la tradition hindoustanie : sérieux, profond, chargé de gravité. Son andolan lent (oscillation) sur les notes Ga et Ni fait de chaque note une question sur la nature de l'existence.">Created — or immortalized — by Tansen for Emperor Akbar's court (darbar = royal court). The most prestigious raga in the Hindustani tradition: serious, profound, heavy with gravity. Its most distinctive feature is a slow andolan (oscillation) on the Ga and Ni notes — a shimmering hesitation that makes each note feel like a question about the nature of existence. The great Dhrupad masters consider it the ultimate test of a musician's maturity and depth.</p>
+      <span class="legend-tag" data-fr="👑 Rasa : Karuna — Gravité Profonde & Contemplation">👑 Rasa: Karuna — Deep Gravity &amp; Contemplation</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="La légende dit qu'Akbar pleurait chaque fois que Tansen interprétait Darbari à la cour de minuit — non de tristesse, mais d'une émotion si profonde qu'elle n'avait pas de nom. Jouer ce raga mal est considéré comme une insulte au fantôme de Tansen.">Legend says Akbar wept every time Tansen performed Darbari in the midnight court — not from sadness, but from an emotion so deep it had no name. The raga is said to contain the weight of all the great courts and all their forgotten music — every note a monument. Playing it badly is considered an insult to Tansen's ghost.</p>
     </div>
 
     <div class="card">
-      <h3>🌑 Raga Malkauns</h3>
-      <div class="region">Deep Night · 12–3 AM · All Seasons</div>
-      <p>One of the most ancient and mysterious of all ragas — pentatonic (only five notes), containing no Re or Pa. Known as <em>Hindolam</em> in Carnatic music. Its reduced palette creates a concentrated, inward, almost hypnotic quality — like a meditation chamber with all unnecessary doors sealed. Dark, austere, and utterly still, Malkauns is the sound of the mind resting in its own depths at the midnight hour.</p>
-      <span class="legend-tag">🕉 Rasa: Shanta — Deep Stillness &amp; Mystery</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Associated with Shiva in deep samadhi on Mount Kailash — awareness without thought. According to legend, when Tansen's singing of Raga Deepak accidentally set the world on fire, it was Malkauns that a river goddess sang to extinguish the flames. The raga is said to cool whatever burns too hot — rage, fever, obsession.</p>
+      <h3 data-fr="🌑 Raga Malkauns">🌑 Raga Malkauns</h3>
+      <div class="region" data-fr="Nuit Profonde · 00h–3h · Toutes Saisons">Deep Night · 12–3 AM · All Seasons</div>
+      <p data-fr="L'un des plus anciens et mystérieux de tous les ragas — pentatonique (seulement cinq notes), ne contenant ni Re ni Pa. Connu sous le nom de Hindolam en musique carnatique. Sa palette réduite crée une qualité concentrée, intérieure, presque hypnotique — comme une chambre de méditation avec toutes les portes inutiles fermées.">One of the most ancient and mysterious of all ragas — pentatonic (only five notes), containing no Re or Pa. Known as <em>Hindolam</em> in Carnatic music. Its reduced palette creates a concentrated, inward, almost hypnotic quality — like a meditation chamber with all unnecessary doors sealed. Dark, austere, and utterly still, Malkauns is the sound of the mind resting in its own depths at the midnight hour.</p>
+      <span class="legend-tag" data-fr="🕉 Rasa : Shanta — Immobilité Profonde & Mystère">🕉 Rasa: Shanta — Deep Stillness &amp; Mystery</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Associé à Shiva en profond samadhi sur le Mont Kailash. Selon la légende, quand le chant de Tansen du Raga Deepak mit accidentellement le monde en feu, c'est Malkauns qu'une déesse des rivières chanta pour éteindre les flammes.">Associated with Shiva in deep samadhi on Mount Kailash — awareness without thought. According to legend, when Tansen's singing of Raga Deepak accidentally set the world on fire, it was Malkauns that a river goddess sang to extinguish the flames. The raga is said to cool whatever burns too hot — rage, fever, obsession.</p>
     </div>
 
     <div class="card">
-      <h3>🌧 Raga Megh Malhar</h3>
-      <div class="region">Monsoon Season · Any Hour · Rainy Season Only</div>
-      <p>Megh = cloud. Malhar = rain. The raga of the monsoon — one of the Malhar family specifically composed to invoke and celebrate the rains. Sung during or before the arrival of the monsoon, its ascending phrases mimic the building of storm clouds; its descending lines are the relief of the first rain. The joy of Megh Malhar is the specific, universal joy of a land that has waited for rain and is finally drenched.</p>
-      <span class="legend-tag">⛈ Rasa: Adabhuta — Wonder &amp; Joyful Relief</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Tansen, having accidentally set the world ablaze by singing Raga Deepak, was saved when two women singers performed Megh Malhar to summon the monsoon rains. In villages across India, this raga is still sung in drought years — farmers believe its performance can compel the rain god Indra to respond. Associated with Krishna's playful, joyful aspect in Vrindavan.</p>
+      <h3 data-fr="🌧 Raga Megh Malhar">🌧 Raga Megh Malhar</h3>
+      <div class="region" data-fr="Saison de la Mousson · N'importe quelle Heure · Saison Pluvieuse Uniquement">Monsoon Season · Any Hour · Rainy Season Only</div>
+      <p data-fr="Megh = nuage. Malhar = pluie. Le raga de la mousson — spécifiquement composé pour invoquer et célébrer les pluies. Ses phrases ascendantes imitent la formation des nuages d'orage ; ses lignes descendantes sont le soulagement de la première pluie.">Megh = cloud. Malhar = rain. The raga of the monsoon — one of the Malhar family specifically composed to invoke and celebrate the rains. Sung during or before the arrival of the monsoon, its ascending phrases mimic the building of storm clouds; its descending lines are the relief of the first rain. The joy of Megh Malhar is the specific, universal joy of a land that has waited for rain and is finally drenched.</p>
+      <span class="legend-tag" data-fr="⛈ Rasa : Adabhuta — Émerveillement & Soulagement Joyeux">⛈ Rasa: Adabhuta — Wonder &amp; Joyful Relief</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Tansen, ayant accidentellement mis le monde en flammes en chantant le Raga Deepak, fut sauvé quand deux femmes chanteuses interprétèrent Megh Malhar pour invoquer les pluies de mousson. Dans les villages à travers l'Inde, ce raga est encore chanté les années de sécheresse.">Tansen, having accidentally set the world ablaze by singing Raga Deepak, was saved when two women singers performed Megh Malhar to summon the monsoon rains. In villages across India, this raga is still sung in drought years — farmers believe its performance can compel the rain god Indra to respond. Associated with Krishna's playful, joyful aspect in Vrindavan.</p>
     </div>
 
     <div class="card">
-      <h3>🌿 Raga Todi</h3>
-      <div class="region">Late Morning · 9 AM–12 PM · All Seasons</div>
-      <p>Considered among the most complex and emotionally demanding ragas in the entire tradition — a benchmark of a master's maturity. Uses komal Re, Ga, Dha and tivra Ma simultaneously, creating a dense, microtonal palette unlike anything in Western music. One of the 10 Thaats (parent scale families) of Hindustani music. Deeply melancholic and introspective, Todi requires extraordinary control of the gamaka (ornaments) that give each note its full voice.</p>
-      <span class="legend-tag">🦌 Rasa: Karuna — Deep Pathos &amp; Introspection</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">In classical miniature paintings, Todi is depicted as a woman alone in a forest, playing veena to enchanted deer. The image captures the raga perfectly — utter solitude, nature listening, and music so pure it has dissolved the boundary between performer and wilderness. A truly great Todi performance is said to cause the listener to temporarily forget their own name.</p>
+      <h3 data-fr="🌿 Raga Todi">🌿 Raga Todi</h3>
+      <div class="region" data-fr="Fin de Matinée · 9h–12h · Toutes Saisons">Late Morning · 9 AM–12 PM · All Seasons</div>
+      <p data-fr="Considéré parmi les ragas les plus complexes et émotionnellement exigeants de toute la tradition — un test de la maturité d'un maître. Utilise komal Re, Ga, Dha et tivra Ma simultanément, créant une palette microtonale dense sans équivalent dans la musique occidentale.">Considered among the most complex and emotionally demanding ragas in the entire tradition — a benchmark of a master's maturity. Uses komal Re, Ga, Dha and tivra Ma simultaneously, creating a dense, microtonal palette unlike anything in Western music. One of the 10 Thaats (parent scale families) of Hindustani music. Deeply melancholic and introspective, Todi requires extraordinary control of the gamaka (ornaments) that give each note its full voice.</p>
+      <span class="legend-tag" data-fr="🦌 Rasa : Karuna — Profond Pathos & Introspection">🦌 Rasa: Karuna — Deep Pathos &amp; Introspection</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Dans les peintures miniatures classiques, Todi est représentée par une femme seule dans une forêt, jouant de la veena pour des cerfs enchantés. Une grande interprétation de Todi est dite faire que l'auditeur oublie temporairement son propre nom.">In classical miniature paintings, Todi is depicted as a woman alone in a forest, playing veena to enchanted deer. The image captures the raga perfectly — utter solitude, nature listening, and music so pure it has dissolved the boundary between performer and wilderness. A truly great Todi performance is said to cause the listener to temporarily forget their own name.</p>
     </div>
 
     <div class="card">
-      <h3>🌙 Raga Bageshri</h3>
-      <div class="region">Late Night · After Midnight · All Seasons</div>
-      <p>The raga of longing — specifically the ache of separation from someone deeply loved. Uses komal Ga and Ni, with a characteristic wandering, searching quality in its phrases. Widely used in both classical Khayal and semi-classical Thumri settings. Bageshri phrases tend to circle and return, circle and return — musically enacting the mind that cannot stop returning to what it misses. One of the ragas most commonly encountered in classical Indian film music.</p>
-      <span class="legend-tag">💔 Rasa: Shringar Viyog — Longing in Separation</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">In Vaishnavite devotion, Bageshri expresses the soul's longing for Krishna — the Gopis waiting for him who does not return. But its longing transcends any single story: it is the universal ache of those who have loved something they cannot hold. Saints and mystics have used it to express the condition of the soul separated from God, circling forever in the midnight of longing.</p>
+      <h3 data-fr="🌙 Raga Bageshri">🌙 Raga Bageshri</h3>
+      <div class="region" data-fr="Fin de Nuit · Après Minuit · Toutes Saisons">Late Night · After Midnight · All Seasons</div>
+      <p data-fr="Le raga de la nostalgie — spécifiquement la douleur de la séparation d'un être cher. Utilise komal Ga et Ni, avec une qualité errante et chercheuse caractéristique dans ses phrases. Les phrases de Bageshri tendent à tourner et revenir — reproduisant musicalement l'esprit qui ne peut s'arrêter de retourner à ce qui lui manque.">The raga of longing — specifically the ache of separation from someone deeply loved. Uses komal Ga and Ni, with a characteristic wandering, searching quality in its phrases. Widely used in both classical Khayal and semi-classical Thumri settings. Bageshri phrases tend to circle and return, circle and return — musically enacting the mind that cannot stop returning to what it misses. One of the ragas most commonly encountered in classical Indian film music.</p>
+      <span class="legend-tag" data-fr="💔 Rasa : Shringar Viyog — Nostalgie dans la Séparation">💔 Rasa: Shringar Viyog — Longing in Separation</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Dans la dévotion vaishnavite, Bageshri exprime le désir de l'âme pour Krishna. Mais sa nostalgie transcende toute histoire unique : c'est l'aspiration universelle de ceux qui ont aimé quelque chose qu'ils ne peuvent pas retenir.">In Vaishnavite devotion, Bageshri expresses the soul's longing for Krishna — the Gopis waiting for him who does not return. But its longing transcends any single story: it is the universal ache of those who have loved something they cannot hold. Saints and mystics have used it to express the condition of the soul separated from God, circling forever in the midnight of longing.</p>
     </div>
 
     <div class="card">
-      <h3>🌤 Raga Bilawal</h3>
-      <div class="region">Morning · 6–9 AM · All Seasons</div>
-      <p>The <em>"pure"</em> raga — all seven notes in their natural (shuddha) positions, corresponding approximately to the Western major scale. One of the 10 Thaats and the conceptual "home" of Hindustani pitch. Its clarity and openness make it a morning raga of serene purity rather than dramatic intensity. Beginning students learn Bilawal early to understand natural note relationships before encountering the more complex colorings of komal and tivra notes.</p>
-      <span class="legend-tag">🌸 Rasa: Shanta — Clarity &amp; Morning Serenity</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Bilawal is associated with Saraswati — the goddess of knowledge — and with the purity of early morning before the world fills with noise. Its sound is sometimes described as sunlight itself: undramatic, essential, and clarifying. A well-played Bilawal is said to prepare the mind for learning — which is why teachers would begin lessons by singing it.</p>
+      <h3 data-fr="🌤 Raga Bilawal">🌤 Raga Bilawal</h3>
+      <div class="region" data-fr="Matin · 6h–9h · Toutes Saisons">Morning · 6–9 AM · All Seasons</div>
+      <p data-fr="Le raga « pur » — toutes les sept notes dans leurs positions naturelles (shuddha), correspondant approximativement à la gamme majeure occidentale. L'un des 10 Thaats et le « foyer » conceptuel de la hauteur hindoustanie. Sa clarté et son ouverture en font un raga matinal de pureté sereine.">The <em>"pure"</em> raga — all seven notes in their natural (shuddha) positions, corresponding approximately to the Western major scale. One of the 10 Thaats and the conceptual "home" of Hindustani pitch. Its clarity and openness make it a morning raga of serene purity rather than dramatic intensity. Beginning students learn Bilawal early to understand natural note relationships before encountering the more complex colorings of komal and tivra notes.</p>
+      <span class="legend-tag" data-fr="🌸 Rasa : Shanta — Clarté & Sérénité Matinale">🌸 Rasa: Shanta — Clarity &amp; Morning Serenity</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Bilawal est associé à Saraswati — la déesse de la connaissance — et à la pureté du petit matin. Son son est parfois décrit comme la lumière du soleil elle-même : sans drame, essentielle et clarifiante.">Bilawal is associated with Saraswati — the goddess of knowledge — and with the purity of early morning before the world fills with noise. Its sound is sometimes described as sunlight itself: undramatic, essential, and clarifying. A well-played Bilawal is said to prepare the mind for learning — which is why teachers would begin lessons by singing it.</p>
     </div>
 
     <div class="card">
-      <h3>🌸 Raga Kafi</h3>
-      <div class="region">Afternoon · Also: Spring / Holi · All Day</div>
-      <p>One of the most beloved and widely used ragas in Indian music — appearing in classical Khayal, Thumri, Bhajan, and folk song alike. Uses komal Ga and Ni, corresponding roughly to the Dorian mode of Western music. Its color is spring itself: playful, erotic-devotional, tinged with longing but fundamentally joyful. More than any other classical raga, Kafi bleeds into popular and folk traditions, its notes recognizable in countless melodies across the subcontinent.</p>
-      <span class="legend-tag">🎨 Rasa: Shringar — Love, Spring &amp; Play</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Kafi is the raga of Holi — the spring festival where Krishna played tricks, threw colors, and danced with the Gopis. Its notes carry the spirit of divine play (lila) — love that is simultaneously serious and lighthearted, devotional and sensual. Mirabai's bhajans, Kabir's mystical songs, and countless folk poems from Rajasthan and Braj are set in Kafi. It is the people's raga.</p>
+      <h3 data-fr="🌸 Raga Kafi">🌸 Raga Kafi</h3>
+      <div class="region" data-fr="Après-midi · Aussi : Printemps / Holi · Toute la Journée">Afternoon · Also: Spring / Holi · All Day</div>
+      <p data-fr="L'un des ragas les plus aimés et les plus utilisés dans la musique indienne — apparaissant dans le Khayal classique, le Thumri, le Bhajan et la chanson folk. Utilise komal Ga et Ni, correspondant approximativement au mode dorien de la musique occidentale. Sa couleur est le printemps lui-même : joueur, érotique-dévotionnel.">One of the most beloved and widely used ragas in Indian music — appearing in classical Khayal, Thumri, Bhajan, and folk song alike. Uses komal Ga and Ni, corresponding roughly to the Dorian mode of Western music. Its color is spring itself: playful, erotic-devotional, tinged with longing but fundamentally joyful. More than any other classical raga, Kafi bleeds into popular and folk traditions, its notes recognizable in countless melodies across the subcontinent.</p>
+      <span class="legend-tag" data-fr="🎨 Rasa : Shringar — Amour, Printemps & Jeu">🎨 Rasa: Shringar — Love, Spring &amp; Play</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Kafi est le raga de Holi — la fête du printemps où Krishna jouait des tours, jetait des couleurs et dansait avec les Gopis. Ses notes portent l'esprit du jeu divin (lila). C'est le raga du peuple.">Kafi is the raga of Holi — the spring festival where Krishna played tricks, threw colors, and danced with the Gopis. Its notes carry the spirit of divine play (lila) — love that is simultaneously serious and lighthearted, devotional and sensual. Mirabai's bhajans, Kabir's mystical songs, and countless folk poems from Rajasthan and Braj are set in Kafi. It is the people's raga.</p>
     </div>
 
     <div class="card">
-      <h3>🌆 Raga Shree</h3>
-      <div class="region">Dusk · Sunset · Winter Evenings</div>
-      <p>Among the most serious and majestic of all ragas — its gravitational pull is immediately felt. Uses both komal Re and Ni alongside a tivra (raised) Ma — an unusual combination that creates a uniquely weighty, twilight quality. Shree belongs to dusk: the hour of evening prayer (Sandhyavandanam), the transition between worlds. It is a raga for experienced ears — its full depth only revealed to those willing to sit with its heavy, unhurried progression.</p>
-      <span class="legend-tag">🕯 Rasa: Bhakti — Devotional Gravity</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Shree is associated with Lakshmi in her aspect of divine auspiciousness — the moment the lamp is lit at dusk and the home is made sacred for the night. Its sound is the musical equivalent of sandhya (twilight prayer) — the ancient ritual of standing at the threshold of day and night and acknowledging what cannot be seen. A master's Shree should feel like the silence between stars.</p>
+      <h3 data-fr="🌆 Raga Shree">🌆 Raga Shree</h3>
+      <div class="region" data-fr="Crépuscule · Coucher du Soleil · Soirées d'Hiver">Dusk · Sunset · Winter Evenings</div>
+      <p data-fr="Parmi les ragas les plus sérieux et majestueux — sa gravité se fait immédiatement sentir. Utilise à la fois komal Re et Ni aux côtés d'un Ma tivra (élevé) — une combinaison inhabituelle qui crée une qualité de crépuscule unique et lourde. Shree appartient au crépuscule : l'heure de la prière du soir.">Among the most serious and majestic of all ragas — its gravitational pull is immediately felt. Uses both komal Re and Ni alongside a tivra (raised) Ma — an unusual combination that creates a uniquely weighty, twilight quality. Shree belongs to dusk: the hour of evening prayer (Sandhyavandanam), the transition between worlds. It is a raga for experienced ears — its full depth only revealed to those willing to sit with its heavy, unhurried progression.</p>
+      <span class="legend-tag" data-fr="🕯 Rasa : Bhakti — Gravité Dévotionnelle">🕯 Rasa: Bhakti — Devotional Gravity</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Shree est associé à Lakshmi dans son aspect d'auspiciosité divine — le moment où la lampe est allumée au crépuscule et où le foyer est rendu sacré pour la nuit. Un Shree de maître doit ressembler au silence entre les étoiles.">Shree is associated with Lakshmi in her aspect of divine auspiciousness — the moment the lamp is lit at dusk and the home is made sacred for the night. Its sound is the musical equivalent of sandhya (twilight prayer) — the ancient ritual of standing at the threshold of day and night and acknowledging what cannot be seen. A master's Shree should feel like the silence between stars.</p>
     </div>
 
     <div class="card">
-      <h3>🌠 Raga Pooriya Dhanashri</h3>
-      <div class="region">Dusk · 6–9 PM · All Seasons</div>
-      <p>A composite raga — a fusion of Pooriya and Dhanashri — and one of the most complex in the entire Hindustani tradition. Contains both a raised Ma (tivra) and komal Re, Ga, Ni simultaneously, creating an intricate harmonic density that rewards deep listening. It occupies the same twilight hour as Yaman but carries far more weight and shadow — not the open longing of evening, but a profound, almost aching sense of spiritual yearning that only dusk can hold.</p>
-      <span class="legend-tag">🌌 Rasa: Shringar Viyog — Twilight Spiritual Longing</span>
-      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic">Pooriya Dhanashri is considered the raga of the soul standing at the last gate before darkness — looking back at the day and forward into night, aware of how much beauty has passed and how much remains unseen. It is said to contain two souls in one body — Pooriya's searching intensity and Dhanashri's tender devotion — forever in conversation, never fully resolved.</p>
+      <h3 data-fr="🌠 Raga Pooriya Dhanashri">🌠 Raga Pooriya Dhanashri</h3>
+      <div class="region" data-fr="Crépuscule · 18h–21h · Toutes Saisons">Dusk · 6–9 PM · All Seasons</div>
+      <p data-fr="Un raga composite — une fusion de Pooriya et Dhanashri — et l'un des plus complexes de toute la tradition hindoustanie. Il occupe la même heure de crépuscule que Yaman mais porte bien plus de poids et d'ombre — non l'aspiration ouverte du soir, mais un sentiment profond d'aspiration spirituelle.">A composite raga — a fusion of Pooriya and Dhanashri — and one of the most complex in the entire Hindustani tradition. Contains both a raised Ma (tivra) and komal Re, Ga, Ni simultaneously, creating an intricate harmonic density that rewards deep listening. It occupies the same twilight hour as Yaman but carries far more weight and shadow — not the open longing of evening, but a profound, almost aching sense of spiritual yearning that only dusk can hold.</p>
+      <span class="legend-tag" data-fr="🌌 Rasa : Shringar Viyog — Aspiration Spirituelle au Crépuscule">🌌 Rasa: Shringar Viyog — Twilight Spiritual Longing</span>
+      <p style="margin-top:10px;font-size:.8rem;color:#c090e0;font-style:italic" data-fr="Pooriya Dhanashri est considéré comme le raga de l'âme se tenant à la dernière porte avant l'obscurité — regardant en arrière vers la journée et en avant vers la nuit. On dit qu'il contient deux âmes en un seul corps — l'intensité chercheuse de Pooriya et la tendre dévotion de Dhanashri.">Pooriya Dhanashri is considered the raga of the soul standing at the last gate before darkness — looking back at the day and forward into night, aware of how much beauty has passed and how much remains unseen. It is said to contain two souls in one body — Pooriya's searching intensity and Dhanashri's tender devotion — forever in conversation, never fully resolved.</p>
     </div>
 
   </div>
@@ -680,6 +681,45 @@
 <div id="tooltip"></div>
 
 <script>
+let currentLang = 'en';
+
+function initI18n() {
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.dataset.en = el.textContent;
+  });
+  document.querySelectorAll('[data-fr-html]').forEach(el => {
+    el.dataset.enHtml = el.innerHTML;
+  });
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'fr' : 'en';
+  setLang(currentLang);
+}
+
+function setLang(lang) {
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.textContent = lang === 'fr' ? el.dataset.fr : el.dataset.en;
+  });
+  document.querySelectorAll('[data-fr-html]').forEach(el => {
+    el.innerHTML = lang === 'fr' ? el.dataset.frHtml : el.dataset.enHtml;
+  });
+  const btn = document.getElementById('lang-btn');
+  if (btn) btn.textContent = lang === 'fr' ? '🇬🇧 EN' : '🇫🇷 FR';
+  document.documentElement.lang = lang;
+  // Re-render active tooltip if visible
+  if (document.getElementById('tooltip').style.display !== 'none' && window._lastTipId) {
+    const tips = lang === 'fr' ? TIPS_FR : TIPS;
+    const d = tips[window._lastTipId];
+    if (d) {
+      document.querySelector('#tooltip h3').textContent = d.name;
+      document.querySelector('#tooltip .subtitle').textContent = d.sub;
+      document.querySelector('#tooltip p').textContent = d.text;
+      document.querySelector('#tooltip .badge').textContent = d.badge;
+    }
+  }
+}
+
 const TIPS = {
   mridangam: {
     name:"Mridangam", sub:"Tamil Nadu · Percussion · Carnatic",
@@ -748,8 +788,90 @@ const TIPS = {
   }
 };
 
+const TIPS_FR = {
+  mridangam: {
+    name: '🥁 Mridangam',
+    sub: 'Tamil Nadu — Inde du Sud · Percussion Carnatique',
+    text: 'L\'un des plus anciens instruments à percussion de l\'Inde, le Mridangam dont le nom signifie « corps d\'argile ». Aujourd\'hui sculpté dans le bois de jacquier, c\'est le cœur rythmique de la musique carnatique. À l\'époque Sangam, on le jouait pour annoncer le début des batailles.',
+    badge: '⚡ Instrument Divin — Deva Vaadyam'
+  },
+  veena: {
+    name: '🪕 Veena de Saraswati',
+    sub: 'Thanjavur, Tamil Nadu — Inde du Sud · Carnatique',
+    text: 'L\'instrument à cordes emblématique de la musique classique carnatique, surnommé « La Reine des Instruments ». Un grand luth à calebasse avec 24 frettes en bronze fixes. Saraswati, déesse de la connaissance, est toujours représentée tenant cette Veena.',
+    badge: '🌟 Reine des Instruments'
+  },
+  'rudra-veena': {
+    name: '🪕 Rudra Veena',
+    sub: 'Inde du Nord — Dhrupad · Varanasi, Gwalior, Maihar',
+    text: 'Le plus sacré et le plus ancien de tous les instruments à cordes indiens. Une longue cithare à bâton avec deux grandes résonateurs en calebasse. L\'instrument du Dhrupad, la tradition hindoustanie la plus austère. Moins d\'une douzaine de maîtres actifs subsistent.',
+    badge: '🔱 L\'Instrument de Shiva'
+  },
+  sitar: {
+    name: '🪕 Sitar',
+    sub: 'Inde du Nord — Delhi de l\'ère moghole · Cordes',
+    text: 'Né du croisement des traditions persane et indienne, le Sitar évolua au XIIIe siècle à partir du setar persan. Attribué à Amir Khusro. Façonné plus tard par Ravi Shankar et Vilayat Khan en instrument iconique mondial.',
+    badge: '🌍 Croisement Perse-Indien'
+  },
+  tabla: {
+    name: '🥁 Tabla',
+    sub: 'Inde du Nord — Ère Moghole · Percussion',
+    text: 'Le duo de percussion indien le plus reconnu au monde. Une paire de tambours (le dayan aigu et le bayan grave), sa forme moderne cristallisée au XVIIIe siècle. Utilisé mondialement — du jazz à la fusion électronique.',
+    badge: '🔱 Né du Divin'
+  },
+  bansuri: {
+    name: '🎵 Bansuri (Flûte)',
+    sub: 'Inde du Nord rurale — Mathura / Brindavan · Vents',
+    text: 'Une flûte traversière en bambou vieille de plus de 3 000 ans. Simple de forme, extraordinairement exigeante en technique. Évolua d\'instrument folk de bergers vers l\'une des voix les plus spirituelles de la musique hindoustanie.',
+    badge: '💙 La Voix de Krishna'
+  },
+  santoor: {
+    name: '🪗 Santoor',
+    sub: 'Cachemire — Extrême Nord · Bourdon/Cithare',
+    text: 'Un dulcimer à marteau de plus de 100 cordes, adopté de la culture musicale persane. Rendu essentiel dans la musique folk soufie du Cachemire. Son ton chatoyant devint central dans la musique classique hindoustanie grâce à Pandit Shivkumar Sharma.',
+    badge: '🌿 Soufi + Classique'
+  },
+  sarod: {
+    name: '🪕 Sarod',
+    sub: 'Nord-Ouest de l\'Inde — Croisement Afghan · Cordes',
+    text: 'Un luth à manche court et sans frettes avec une touche en métal, descendant du Rabab afghan. Son design sans frettes lui confère une qualité de glissement unique. Ustad Ali Akbar Khan lui donna une reconnaissance mondiale.',
+    badge: '🌍 Héritage Afghan'
+  },
+  shehnai: {
+    name: '🎺 Shehnai',
+    sub: 'Inde du Nord — Varanasi / Konkan · Vents',
+    text: 'Un instrument à anche double — le hautbois de l\'Inde. L\'instrument des cérémonies auspicieuses : mariages, temples, cours royales. Ustad Bismillah Khan en a fait un instrument de concert international.',
+    badge: '✨ Son Propice'
+  },
+  tanpura: {
+    name: '🪗 Tanpura',
+    sub: 'Deccan — Maharashtra / Karnataka · Bourdon',
+    text: 'Pas un instrument mélodique mais un bourdon sacré — quatre cordes accordées pour produire un bourdonnement harmonique continu qui sous-tend toute la musique classique indienne. Associé au sage Narada et au Om primordial.',
+    badge: '🕉 Bourdon de Méditation'
+  },
+  khol: {
+    name: '🥁 Khol (Mridanga du Bengale)',
+    sub: 'Bengale / Odisha — Inde de l\'Est · Percussion',
+    text: 'La forme orientale de la famille Mridangam — un tambour asymétrique en argile. L\'instrument central de la musique dévotionnelle bengalie (Kirtan) et de la tradition vaishnavite de Chaitanya Mahaprabhu.',
+    badge: '🌸 Musique Dévotionnelle'
+  },
+  pakhavaj: {
+    name: '🥁 Pakhavaj',
+    sub: 'Inde du Nord — Dhrupad · Varanasi, Mathura · Percussion',
+    text: 'L\'Aadi Vadya — le tambour primordial de l\'Inde. Ancêtre direct du Tabla et du Mridangam. Le seul instrument à percussion du Dhrupad pendant des siècles — l\'épine dorsale de la forme la plus sacrée de la musique hindoustanie.',
+    badge: '🔱 Aadi Vadya — Le Premier Tambour'
+  },
+  kanjira: {
+    name: '🥁 Kanjira',
+    sub: 'Tamil Nadu — Inde du Sud, Carnatique · Percussion',
+    text: 'Un petit tambour à cadre à une seule membrane — le cousin sud-indien du tambourin. Transformé en voix classique carnatique dans les années 1880 par Manpoondia Pillai. Joué contre la paume pour plier la hauteur en temps réel.',
+    badge: '🎶 Tambour à Cadre Carnatique'
+  }
+};
+
 function showTip(e, id) {
-  var d = TIPS[id];
+  window._lastTipId = id;
+  var d = (currentLang === 'fr' ? TIPS_FR : TIPS)[id];
   var t = document.getElementById('tooltip');
   t.innerHTML =
     '<h3>' + d.name + '</h3>' +
@@ -795,6 +917,8 @@ function showPanel(name, tabEl) {
   document.getElementById(name + '-panel').classList.add('active');
   if (tabEl) tabEl.classList.add('active');
 }
+
+initI18n();
 </script>
 </body>
 </html>
