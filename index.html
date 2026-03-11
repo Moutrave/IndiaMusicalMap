@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ENGLISH">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,7 +86,7 @@
 <header>
   <h1 data-fr="🎵 Inde — Héritage Musical en Carte">&#127925; India — Musical Heritage Board</h1>
   <p data-fr="Instruments · Ragas · Styles · Cadres · Mythologie">Instruments · Ragas · Styles · Frameworks · Mythology</p>
-  <button id="lang-btn" onclick="toggleLang()" style="margin-top:12px;padding:5px 16px;background:#1a1228;border:1px solid #f2c94c;border-radius:16px;color:#f2c94c;cursor:pointer;font-size:.8rem;letter-spacing:.06em;font-family:Georgia,serif;">🇫🇷 FR</button>
+  <button id="lang-btn" onclick="toggleLang()" style="margin-top:12px;padding:5px 16px;background:#1a1228;border:1px solid #f2c94c;border-radius:16px;color:#f2c94c;cursor:pointer;font-size:.8rem;letter-spacing:.06em;font-family:Georgia,serif;">Français</button>
 </header>
 
 <div class="tabs">
@@ -705,7 +705,7 @@ function setLang(lang) {
     el.innerHTML = lang === 'fr' ? el.dataset.frHtml : el.dataset.enHtml;
   });
   const btn = document.getElementById('lang-btn');
-  if (btn) btn.textContent = lang === 'fr' ? '🇬🇧 EN' : '🇫🇷 FR';
+  if (btn) btn.textContent = lang === 'fr' ? 'English' : 'Français';
   document.documentElement.lang = lang;
   // Re-render active tooltip if visible
   if (document.getElementById('tooltip').style.display !== 'none' && window._lastTipId) {
